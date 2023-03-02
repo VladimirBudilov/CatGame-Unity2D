@@ -7,15 +7,17 @@ public class LeavingHouse : MonoBehaviour
 {
     [SerializeField] private GameObject _house;
     [SerializeField] private GameObject _street;
-    private void OnTriggerEnter(Collider other)
+    [SerializeField] private Transform _spawnPoint;
+    private void OnTriggerEnter2D(Collider2D col)
     {
-        if (other.CompareTag("Player"))
+        if (col.CompareTag("Player"))
         {
+            Console.WriteLine("kslflsd");
             OffSceneHouse();
+            TransitionToSpawnPoint(col);
             OnSceneStreet();
         }
     }
-
     void OffSceneHouse()
     {
         _house.gameObject.SetActive(false);
@@ -26,8 +28,14 @@ public class LeavingHouse : MonoBehaviour
         _street.gameObject.SetActive(true);
     }
 
-    void TransitionToSpawnPoint()
+    void TransitionToSpawnPoint(Collider2D player)
     {
+        Vector2 pos = player.transform.position;
+
+        var targetPosition = _spawnPoint.position;
+        pos.x = targetPosition.x;
+        pos.y = targetPosition.y;
         
+        player.transform.position = pos;
     }
 }
