@@ -30,6 +30,7 @@ public class PlayerMove : MonoBehaviour
 
     private void Update()
     {
+        
         switch (_typeOfView)
         {
             case TypeOfView.SIDE:
@@ -39,12 +40,12 @@ public class PlayerMove : MonoBehaviour
                     _extraJump = _extraJumpValue;
                 }
 
-                if (Input.GetKeyDown(KeyCode.Backspace) && _extraJump > 0)
+                if (Input.GetKeyDown(KeyCode.Space) && _extraJump > 0)
                 {
                     _rigidbody.velocity = Vector2.up * _jumpForce;
                     _extraJump--;
                 }
-                else if (Input.GetKeyDown(KeyCode.Backspace) && _extraJump == 0 && _isGrounded == true)
+                else if (Input.GetKeyDown(KeyCode.Space) && _extraJump == 0 && _isGrounded == true)
                 {
                     _rigidbody.velocity = Vector2.up * _jumpForce;
                 }
@@ -59,6 +60,11 @@ public class PlayerMove : MonoBehaviour
 
     private void FixedUpdate()
     {
+        _moveInput.x = Input.GetAxis("Horizontal");
+        _moveInput.y = Input.GetAxis("Vertical");
+
+        Rotation(_moveInput.x);
+        
         switch (_typeOfView)
         {
             case TypeOfView.SIDE:
@@ -67,19 +73,32 @@ public class PlayerMove : MonoBehaviour
                 
                 _isGrounded = Physics2D.OverlapCircle(_groundCheck.position, _checkRadius, _whatIsGround);
         
-                _moveInput.x = Input.GetAxis("Horizontal");
+                
                 _rigidbody.velocity = new Vector2(_moveInput.x * _speed, _rigidbody.velocity.y);
                 break;
             
             case TypeOfView.TOP:
                 
                 _rigidbody.gravityScale = 0;
-
-                _moveInput.x = Input.GetAxis("Horizontal");
-                _moveInput.y = Input.GetAxis("Vertical");
-
+                
                 _rigidbody.MovePosition(_rigidbody.position + _moveInput * (_speed * Time.fixedDeltaTime));
                 break;
         }
+    }
+
+    void Rotation(float direction)
+    {
+        Quaternion rot = transform.rotation;
+        
+        if (direction < 0)
+        {
+            rot.y = 0;
+        }
+        if (direction > 0)
+        {
+            rot.y = 180;
+        }
+        
+        transform.rotation = rot;
     }
 } 
