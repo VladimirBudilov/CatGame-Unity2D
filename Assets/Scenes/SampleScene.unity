@@ -926,7 +926,7 @@ MonoBehaviour:
   _typeOfView: 0
   _speed: 6
   _jumpForce: 5
-  _extraJumpValue: 2
+  _extraJumpValue: 1
   _groundCheck: {fileID: 225750286}
   _checkRadius: 0.5
   _whatIsGround:
