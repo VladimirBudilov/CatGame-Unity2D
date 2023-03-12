@@ -10,7 +10,8 @@ public class PlayerMoveTV : MonoBehaviour
     private Vector2 _moveInput;
     private Rigidbody2D _rigidbody;
 
-    private KeyCode[] _codes = new KeyCode[] {KeyCode.W, KeyCode.S, KeyCode.A, KeyCode.D}; 
+    private KeyCode[] _keys = new KeyCode[] {KeyCode.W, KeyCode.S, KeyCode.A, KeyCode.D};
+    private int[] _codes = new[] {0, 180, 90, -90 };
     private void Awake()
     {
         _rigidbody = GetComponent<Rigidbody2D>();
@@ -22,16 +23,24 @@ public class PlayerMoveTV : MonoBehaviour
         _moveInput.x = Input.GetAxis("Horizontal");
         _moveInput.y = Input.GetAxis("Vertical");
 
-        //Rotation();
+        Rotation();
         
         _rigidbody.MovePosition(_rigidbody.position + _moveInput * (_speed * Time.fixedDeltaTime));
     }
 
-    //void Rotation()
-    //{
-    //    if (expr)
-    //    {
-    //        
-    //    }
-    //}
+    void Rotation()
+    {
+        Quaternion rot = transform.rotation;
+        
+        for (int i = 0; i < 4; i++)
+        {
+            if (Input.GetKey(_keys[i]))
+            {
+                rot = Quaternion.Euler(0,0,_codes[i]);
+            }
+        }
+
+        transform.rotation = rot;
+
+    }
 }
