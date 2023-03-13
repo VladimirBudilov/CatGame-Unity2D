@@ -16,6 +16,6 @@ public class RangeAttack : MonoBehaviour
     private void Attack()
     {
         var bullet = Instantiate(bulletPref, gun.position, gun.rotation);
-        bullet.GetComponent<Rigidbody2D>().AddForce(gun.right * bulletSpeed, ForceMode2D.Impulse);
+        bullet.GetComponent<Rigidbody2D>().AddForce(gun.up * bulletSpeed, ForceMode2D.Impulse);
     }
 }

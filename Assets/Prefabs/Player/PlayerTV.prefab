@@ -175,7 +175,6 @@ MonoBehaviour:
   gun: {fileID: 6364511824468316905}
   bulletPref: {fileID: 1903925631746449887, guid: 02e7c056cba1e254b98e4429d1c929bf, type: 3}
   bulletSpeed: 20
-  UpView: 0
 --- !u!1 &6970753967180213389
 GameObject:
   m_ObjectHideFlags: 0

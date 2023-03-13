@@ -1,26 +1,40 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class SwitchView : MonoBehaviour
 {
-    [SerializeField] private GameObject _playerTV;
-    [SerializeField] private GameObject _playerSV;
+    [Header("View mode")]
+    [SerializeField] private bool _sideView;
+    [SerializeField] private bool _topView;
     
-    private bool _flag;
-
+    [Header("Player prefabs")]
+    [SerializeField] private GameObject _playerSV;
+    [SerializeField] private GameObject _playerTV;
+    
     public void Switch()
     {
-        if (GameObject.Find("PlayerSV"))
+        if (_sideView)
         {
-            Instantiate(_playerTV, transform.parent);
-            Destroy(_playerSV);
-        }
+            _playerSV.gameObject.SetActive(false);
 
-        if (GameObject.Find("PlayerTV"))
+            _playerTV.transform.position = _playerSV.transform.position;
+            _playerTV.gameObject.SetActive(true);
+
+            _sideView = false;
+            _topView = true;
+        }
+        
+        else if (_topView)
         {
-            Instantiate(_playerSV, transform.parent);
-            Destroy(_playerTV);
+            _playerSV.transform.position = _playerTV.transform.position;
+            _playerSV.gameObject.SetActive(true);
+            _playerTV.gameObject.SetActive(false);
+
+            _sideView = true;
+            _topView = false;
         }
     }
 }
