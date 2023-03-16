@@ -70,10 +70,10 @@ public class InventoryWithSlots : IInventory
         return equippedItems.ToArray();
     }
 
-    public int GetItemAmount(Type itemTYpe)
+    public int GetItemAmount(Type itemType )
     {
         var amount = 0;
-        var allItemSlots = _slots.FindAll(slot => !slot.isEmpty && slot.itemType == itemTYpe);
+        var allItemSlots = _slots.FindAll(slot => !slot.isEmpty && slot.itemType == itemType);
         foreach (var itemSlot in allItemSlots)
         {
             amount += itemSlot.amount;
@@ -82,7 +82,7 @@ public class InventoryWithSlots : IInventory
         return amount;
     }
 
-    public bool TryToAdd(object sender, IInventoryItem item)
+    public bool TryToAdd(object sender, IInventoryItem item)  
     {
         var slotWithSameItemButNotEmpty =
             _slots.Find(slot => !slot.isEmpty && slot.itemType == item.type && !slot.isFull);
@@ -119,6 +119,7 @@ public class InventoryWithSlots : IInventory
             slot.item.amount += amountToAdd;
         }
         
+        Debug.Log($"Item added ItemType -{item.type}, amount - {amountToAdd}");
         OnInventoryItemAddedEvent?.Invoke(sender,item,amountToAdd);
 
         if (amountLeft <= 0)
@@ -152,7 +153,7 @@ public class InventoryWithSlots : IInventory
                 {
                     slot.Clear();
                 }
-                
+                Debug.Log($"Item removed ItemType -{itemType}, amount - {amountToRemove}");
                 OnInventoryItemRemovedEvent?.Invoke(sender, itemType,amountToRemove);
                 break;
             }
@@ -160,6 +161,7 @@ public class InventoryWithSlots : IInventory
             var amountRemoved = slot.amount;
             amountToRemove -= slot.amount;
             slot.Clear();
+            Debug.Log($"Item removed ItemType -{itemType}, amount - {amountRemoved  }");
             OnInventoryItemRemovedEvent?.Invoke(sender, itemType,amountRemoved);
         }
     }
