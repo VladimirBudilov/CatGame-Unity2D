@@ -7,7 +7,7 @@ public interface IInventory
 
     IInventoryItem GetItem(Type itemType);
     IInventoryItem[] GetAllItems();
-    IInventoryItem[] getAllItems(Type itemType);
+    IInventoryItem[] GetAllItems(Type itemType);
     IInventoryItem[] GetEquippedItems();
     int GetItemAmount(Type itemTYpe);
 

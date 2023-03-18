@@ -23,15 +23,14 @@ public class UIItem : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHa
         slotTransform.SetAsLastSibling();
         _canvasGroup.blocksRaycasts = false;
     }
-    
     public void OnDrag(PointerEventData eventData)
     {
-        _rectTransform.anchoredPosition += eventData.delta/_mainCanvas.scaleFactor;
+        _rectTransform.anchoredPosition += eventData.delta / _mainCanvas.scaleFactor;
     }
     
     public void OnEndDrag(PointerEventData eventData)
     {
-        transform.localPosition=Vector3.zero;
+        transform.localPosition = Vector3.zero;
         _canvasGroup.blocksRaycasts = true;
     }
 }
