@@ -19,7 +19,7 @@ public class MeleeAttack : MonoBehaviour
     
     void Update()
     {
-        if (Input.GetKey(KeyCode.Q))
+        if (Input.GetKey(KeyCode.X))
         { 
             Attack();
         }
