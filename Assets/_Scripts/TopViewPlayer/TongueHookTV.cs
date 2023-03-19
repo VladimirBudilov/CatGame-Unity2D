@@ -5,7 +5,7 @@ using Cinemachine;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class TongueHookUp : MonoBehaviour
+public class TongueHookTV : MonoBehaviour
 {
     [SerializeField] private float hookSpeed = 20f;
     [SerializeField] private float maxHookDistance = 40f;
@@ -64,7 +64,7 @@ public class TongueHookUp : MonoBehaviour
                 isHooking = false;
                 rb.isKinematic = true;
                 rb.velocity = new Vector2(0, 0);
-                transform.position = originalPos;
+                transform.position = new Vector2(originalPos.x, originalPos.y);
             }
         }
     }
@@ -76,6 +76,7 @@ public class TongueHookUp : MonoBehaviour
             enemy = col.gameObject;
             wasEnemyHooked = true;
         }
+        ReturnHook();
         BringEnemy();
     }
 }
