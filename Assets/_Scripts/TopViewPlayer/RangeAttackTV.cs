@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Serialization;
 
-public class RangeAttack : MonoBehaviour
+public class RangeAttackTV : MonoBehaviour
 {
     [SerializeField] private Transform gun;
     [SerializeField] private GameObject bulletPref;
