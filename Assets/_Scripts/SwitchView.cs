@@ -12,17 +12,21 @@ public class SwitchView : MonoBehaviour
     
     [Header("Player prefabs")]
     [SerializeField] private GameObject _playerSV;
+    [SerializeField] private GameObject _playerSVCamera;
+    
     [SerializeField] private GameObject _playerTV;
+    [SerializeField] private GameObject _playerTVCamera;
     
     public void Switch()
     {
         if (_sideView)
         {
             _playerSV.gameObject.SetActive(false);
+            _playerSVCamera.gameObject.SetActive(false);
 
             _playerTV.transform.position = _playerSV.transform.position;
             _playerTV.gameObject.SetActive(true);
-
+            _playerTVCamera.gameObject.SetActive(true);
             _sideView = false;
             _topView = true;
         }
@@ -31,7 +35,11 @@ public class SwitchView : MonoBehaviour
         {
             _playerSV.transform.position = _playerTV.transform.position;
             _playerSV.gameObject.SetActive(true);
+            _playerSVCamera.gameObject.SetActive(true);
+            
+            
             _playerTV.gameObject.SetActive(false);
+            _playerTVCamera.gameObject.SetActive(false);
 
             _sideView = true;
             _topView = false;
