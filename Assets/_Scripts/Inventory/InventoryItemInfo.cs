@@ -1,5 +1,4 @@
-﻿
-using UnityEngine;
+﻿using UnityEngine;
 
 [CreateAssetMenu(fileName = "InventoryItemInfo", menuName = "Items/Create New ItemInfo")]
 public class InventoryItemInfo : ScriptableObject, IInventoryItemInfo

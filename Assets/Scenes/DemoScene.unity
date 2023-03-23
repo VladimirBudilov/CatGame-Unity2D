@@ -5964,7 +5964,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _appleInfo: {fileID: 11400000, guid: eaefb423e40b873419d3fcc677986b47, type: 2}
   _pepperInfo: {fileID: 11400000, guid: a2b549ac2d765364d9fa20003fc11de9, type: 2}
-  _isVisible: 0
 --- !u!1 &1446646533
 GameObject:
   m_ObjectHideFlags: 0
@@ -7678,6 +7677,7 @@ GameObject:
   - component: {fileID: 1740100991}
   - component: {fileID: 1740100992}
   - component: {fileID: 1740100993}
+  - component: {fileID: 1740100994}
   m_Layer: 0
   m_Name: Level
   m_TagString: Untagged
@@ -7756,6 +7756,20 @@ MonoBehaviour:
   _playerSVCamera: {fileID: 489302039}
   _playerTV: {fileID: 2063998936}
   _playerTVCamera: {fileID: 145627463}
+--- !u!114 &1740100994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1740100990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 192f448367eea474881f0084a35a5c82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _inventory: {fileID: 1417357805}
+  _inventoryVisible: 0
 --- !u!1 &1764630640
 GameObject:
   m_ObjectHideFlags: 0
@@ -7857,6 +7871,10 @@ PrefabInstance:
     - target: {fileID: 2444817108688770625, guid: 603fd6325acd1c344b524d8bb6025737, type: 3}
       propertyPath: m_Name
       value: PlayerTV
+      objectReference: {fileID: 0}
+    - target: {fileID: 2444817108688770625, guid: 603fd6325acd1c344b524d8bb6025737, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2444817108688770634, guid: 603fd6325acd1c344b524d8bb6025737, type: 3}
       propertyPath: m_RootOrder
