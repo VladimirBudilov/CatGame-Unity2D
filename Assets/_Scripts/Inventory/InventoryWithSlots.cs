@@ -6,19 +6,18 @@ using UnityEngine;
 
 public class InventoryWithSlots : IInventory
 {
-
-    public event Action<object, IInventoryItem, int> OnInventoryItemAddedEvent;
-    public event Action<object, Type, int> OnInventoryItemRemovedEvent;
+    private Testerr _testerr;
     public event Action<object> OnInventoryStateChangedEvent;
     
     public int capacity { get; set; }
     public bool isFull => _slots.All(slot => slot.isFull);
 
     private List<IInventorySlot> _slots;
-
     public InventoryWithSlots(int capacity)
     {
         this.capacity = capacity;
+        
+        GlobalEventManager.OnGetItemInInventoryAction += OnGetItemInInventory;
 
         _slots = new List<IInventorySlot>(capacity);
         for (int i = 0; i < capacity; i++)
@@ -26,7 +25,11 @@ public class InventoryWithSlots : IInventory
             _slots.Add(new InventorySlot());
         }
     }
-    
+    private void OnGetItemInInventory(InventoryItemInfo item)
+    {
+        //TryToAdd(this, item);
+    }
+
     public IInventoryItem GetItem(Type itemType)
     {
         return _slots.Find(slot => slot.itemType == itemType).item;
@@ -121,7 +124,6 @@ public class InventoryWithSlots : IInventory
         }
         
         Debug.Log($"Item added ItemType -{item.type}, amount - {amountToAdd}");
-        OnInventoryItemAddedEvent?.Invoke(sender,item,amountToAdd);
         OnInventoryStateChangedEvent?.Invoke(sender);
 
         if (amountLeft <= 0)
@@ -201,7 +203,6 @@ public class InventoryWithSlots : IInventory
                     slot.Clear();
                 }
                 Debug.Log($"Item removed ItemType -{itemType}, amount - {amountToRemove}");
-                OnInventoryItemRemovedEvent?.Invoke(sender, itemType,amountToRemove);
                 OnInventoryStateChangedEvent?.Invoke(sender);
                 break;
             }
@@ -210,7 +211,6 @@ public class InventoryWithSlots : IInventory
             amountToRemove -= slot.amount;
             slot.Clear();
             Debug.Log($"Item removed ItemType -{itemType}, amount - {amountRemoved  }");
-            OnInventoryItemRemovedEvent?.Invoke(sender, itemType,amountRemoved);
             OnInventoryStateChangedEvent?.Invoke(sender);
         }
     }
