@@ -1,8 +1,5 @@
 ﻿using System;
-
-
-
-    public class Paper : IInventoryItem
+public class Paper : IInventoryItem
     {
         public IInventoryItemInfo info { get; }
         public IInventoryItemState state { get; }
