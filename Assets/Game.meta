@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Game.meta
 guid: e10b88188dad30348924e2172cc0d988
+========
+guid: 0060e276790817847a0468922330af64
+>>>>>>>> new_inventory:Assets/Info/ItemModifiers.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
