@@ -390,7 +390,7 @@ GameObject:
   - component: {fileID: 600871029}
   - component: {fileID: 600871030}
   m_Layer: 8
-  m_Name: Square (4)
+  m_Name: Platform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2182,6 +2182,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _spawnPoint: {fileID: 1246743295}
+  _platforms:
+  - {fileID: 600871030}
+  - {fileID: 1550248074}
+  - {fileID: 1951493479}
+  - {fileID: 2038861940}
+  - {fileID: 1719326783}
 --- !u!1 &1550248070
 GameObject:
   m_ObjectHideFlags: 0
@@ -2195,7 +2201,7 @@ GameObject:
   - component: {fileID: 1550248073}
   - component: {fileID: 1550248074}
   m_Layer: 8
-  m_Name: Square (5)
+  m_Name: Platform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2545,7 +2551,7 @@ GameObject:
   - component: {fileID: 1719326780}
   - component: {fileID: 1719326783}
   m_Layer: 8
-  m_Name: Square (10)
+  m_Name: First Platform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2653,13 +2659,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1719326779}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 38f84456a7a2c754d8a604dd3f9572a4, type: 3}
+  m_Script: {fileID: 11500000, guid: 570bc6c5975af774b8f8c641e9267634, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _nextPlatform: {fileID: 600871026}
   _spawnPoint: {fileID: 1246743295}
   _isAllowedToJump: 1
   _color: {r: 0.25490198, g: 0.25490198, b: 0.25490198, a: 1}
+  _startColor: {r: 1, g: 0.31764707, b: 0, a: 1}
 --- !u!1 &1740100990
 GameObject:
   m_ObjectHideFlags: 0
@@ -2762,7 +2769,7 @@ GameObject:
   - component: {fileID: 1951493478}
   - component: {fileID: 1951493479}
   m_Layer: 8
-  m_Name: Square (6)
+  m_Name: Platform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2955,7 +2962,7 @@ GameObject:
   - component: {fileID: 2038861937}
   - component: {fileID: 2038861940}
   m_Layer: 8
-  m_Name: Square (8)
+  m_Name: Platform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3369,7 +3376,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2969481892299628414, guid: aee8e06b318292e4ba87e4f6a1f45360, type: 3}
       propertyPath: m_Name
-      value: CameraSV
+      value: Platform
       objectReference: {fileID: 0}
     - target: {fileID: 2969481893098029884, guid: aee8e06b318292e4ba87e4f6a1f45360, type: 3}
       propertyPath: m_Follow
