@@ -13,6 +13,14 @@ public class AIConversant : MonoBehaviour
     private void Start()
     {
         _playerConversant = GameObject.FindObjectOfType<PlayerConversant>();
-        gameObject.GetComponent<Button>().onClick.AddListener(() =>_playerConversant.StartDialogue(this, AIDialogue));
+        //gameObject.GetComponent<Button>().onClick.AddListener(() =>_playerConversant.StartDialogue(this, AIDialogue));
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.G))
+        {
+            _playerConversant.StartDialogue(this, AIDialogue);
+        }
     }
 }
