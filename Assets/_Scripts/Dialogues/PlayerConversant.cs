@@ -22,7 +22,7 @@ namespace RPG.Dialogue
         {
             return currentDialogue != null;
         }
-        
+
         public void StartDialogue(AIConversant newConversant, Dialogue newDialogue)
         {
             currentConversant = newConversant;
@@ -41,14 +41,17 @@ namespace RPG.Dialogue
             isChoosing = false;
             onConversationUpdated();
         }
+
         public bool IsChoosing()
         {
             return isChoosing;
         }
+
         public string GetText()
         {
             return currentNode != null ? currentNode.GetText() : "";
         }
+
         public IEnumerable<DialogueNode> GetChoices()
         {
             return currentDialogue.GetPlayerChildren(currentNode);
@@ -61,6 +64,7 @@ namespace RPG.Dialogue
             isChoosing = false;
             Next();
         }
+
         public void Next()
         {
             var numPlayerResp = currentDialogue.GetPlayerChildren(currentNode).Count();
@@ -71,12 +75,15 @@ namespace RPG.Dialogue
                 onConversationUpdated();
                 return;
             }
+
             var children = currentDialogue.GetAIChildren(currentNode).ToArray();
             TriggerExitAction();
+
             currentNode = children[Random.Range(0, children.Length)];
             TriggerEnterAction();
             onConversationUpdated();
         }
+
         public bool HasNext()
         {
             return currentDialogue.GetAllChildren(currentNode).Any();
@@ -89,7 +96,7 @@ namespace RPG.Dialogue
                 TriggerAction(currentNode.GetOnEnterAction());
             }
         }
-        
+
         private void TriggerExitAction()
         {
             if (currentNode != null)
@@ -97,15 +104,23 @@ namespace RPG.Dialogue
                 TriggerAction(currentNode.GetOnExitAction());
             }
         }
+
         private void TriggerAction(string action)
         {
-            if(action == "") return;
+            if (action == "") return;
             foreach (var trigger in currentConversant.GetComponents<DialogueTrigger>())
             {
                 trigger.Trigger(action);
             }
         }
 
-        
+        public string GetCurrentSpeakerName()
+        {
+            if (isChoosing)
+                return currentNode.GetPlayerName();
+            else
+                return currentNode.GetSpeakerName();
+            
+        }
     }
 }

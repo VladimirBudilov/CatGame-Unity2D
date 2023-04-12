@@ -752,11 +752,11 @@ RectTransform:
   m_Father: {fileID: 5835713608560780818}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 277, y: 139}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -3, y: 2}
   m_SizeDelta: {x: 30, y: 30}
-  m_Pivot: {x: 0.50000006, y: 0.5}
+  m_Pivot: {x: 0.49999976, y: 0.5}
 --- !u!222 &4945529595726330386
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1724,6 +1724,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AIText: {fileID: 5847113071815715788}
+  SpeakerName: {fileID: 7001453527635224253}
   nextButton: {fileID: 2168989237834277005}
   quitButton: {fileID: 7017331983939028502}
   playerResponseRoot: {fileID: 6313495062452817692}

@@ -1,29 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-9097259531684571589
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1bbc756a6650ab74bae0f2ae07a11ebf, type: 3}
-  m_Name: 7ee92fbe-69c6-4a6a-b85d-535011a21981
-  m_EditorClassIdentifier: 
-  isPlayerSpeaking: 1
-  text: by
-  children:
-  - 99026ee3-097c-4c1e-b2b3-502d2a6e3044
-  rect:
-    serializedVersion: 2
-    x: 252
-    y: 242
-    width: 200
-    height: 100
-  onEnterAction: 
-  onExitAction: 
 --- !u!114 &-5370031772053040475
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36,11 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1bbc756a6650ab74bae0f2ae07a11ebf, type: 3}
   m_Name: 488f9bbe-1c77-488f-acd0-c3e873513a93
   m_EditorClassIdentifier: 
-  isPlayerSpeaking: 0
+  speakerName: Mother
+  playerName: cat
   text: hay
   children:
-  - a475ade6-4b1b-4110-9dd2-1c63237ea629
-  - 7ee92fbe-69c6-4a6a-b85d-535011a21981
+  - 0bc28210-b0db-4436-a44f-24380d40197b
+  - 24ff5705-5924-4bba-8c86-a191cd846d7b
   rect:
     serializedVersion: 2
     x: 0
@@ -49,7 +26,7 @@ MonoBehaviour:
     height: 100
   onEnterAction: 
   onExitAction: 
---- !u!114 &-4500338527120653665
+--- !u!114 &-2670483811349934499
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -59,20 +36,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1bbc756a6650ab74bae0f2ae07a11ebf, type: 3}
-  m_Name: 99026ee3-097c-4c1e-b2b3-502d2a6e3044
+  m_Name: 24ff5705-5924-4bba-8c86-a191cd846d7b
   m_EditorClassIdentifier: 
-  isPlayerSpeaking: 0
+  speakerName: cat
+  playerName: cat
   text: by
-  children: []
+  children:
+  - f216c7ca-80cc-4967-ab91-5f71fcdc5cb4
   rect:
     serializedVersion: 2
-    x: 1239
-    y: 249
+    x: 265
+    y: 277
     width: 200
     height: 100
   onEnterAction: 
   onExitAction: 
---- !u!114 &-2738851093931529463
+--- !u!114 &-1576541279694288045
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -82,20 +61,46 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1bbc756a6650ab74bae0f2ae07a11ebf, type: 3}
-  m_Name: 906eb58d-eaf1-4d28-bee8-5bb2abfb6ba6
+  m_Name: 0bc28210-b0db-4436-a44f-24380d40197b
   m_EditorClassIdentifier: 
-  isPlayerSpeaking: 1
-  text: ?????
+  speakerName: cat
+  playerName: cat
+  text: hay
   children:
-  - 5a25cae0-cbba-4e59-a484-c5ed22055536
+  - 25f30657-c41c-4f2e-bacd-b68259fc2dbe
   rect:
     serializedVersion: 2
-    x: 754
-    y: 9
+    x: 251
+    y: 0
     width: 200
     height: 100
   onEnterAction: 
   onExitAction: 
+--- !u!114 &-637286598182684050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bbc756a6650ab74bae0f2ae07a11ebf, type: 3}
+  m_Name: 5ede52f8-b71c-4fb9-8948-6d5d8e71893a
+  m_EditorClassIdentifier: 
+  speakerName: cat
+  playerName: cat
+  text: white
+  children:
+  - f687fb48-9075-4c45-8553-1d4ffea54d75
+  rect:
+    serializedVersion: 2
+    x: 731
+    y: 0
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: WhiteColor
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -110,14 +115,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodes:
   - {fileID: -5370031772053040475}
-  - {fileID: 5085915500197136806}
-  - {fileID: -2738851093931529463}
-  - {fileID: 8164170111912621569}
-  - {fileID: 5947473388152087844}
-  - {fileID: -9097259531684571589}
-  - {fileID: -4500338527120653665}
+  - {fileID: -1576541279694288045}
+  - {fileID: -2670483811349934499}
+  - {fileID: 5755999680538605108}
+  - {fileID: 5720788006373431536}
+  - {fileID: -637286598182684050}
+  - {fileID: 2947076411118771701}
+  - {fileID: 955074371021918693}
   newNodeOffset: {x: 250, y: 0}
---- !u!114 &5085915500197136806
+--- !u!114 &955074371021918693
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -127,22 +133,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1bbc756a6650ab74bae0f2ae07a11ebf, type: 3}
-  m_Name: 969081af-3d4d-4b05-949f-1557d71b88ab
+  m_Name: f687fb48-9075-4c45-8553-1d4ffea54d75
   m_EditorClassIdentifier: 
-  isPlayerSpeaking: 0
-  text: nothing
+  speakerName: Mother
+  playerName: cat
+  text: here it is
   children:
-  - 906eb58d-eaf1-4d28-bee8-5bb2abfb6ba6
-  - 7ee92fbe-69c6-4a6a-b85d-535011a21981
+  - f216c7ca-80cc-4967-ab91-5f71fcdc5cb4
   rect:
     serializedVersion: 2
-    x: 517
-    y: 13
+    x: 1017
+    y: 52
     width: 200
     height: 100
   onEnterAction: 
   onExitAction: 
---- !u!114 &5947473388152087844
+--- !u!114 &2947076411118771701
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -152,21 +158,48 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1bbc756a6650ab74bae0f2ae07a11ebf, type: 3}
-  m_Name: a475ade6-4b1b-4110-9dd2-1c63237ea629
+  m_Name: 661f3097-4d0b-4265-9521-9ff89819c2c1
   m_EditorClassIdentifier: 
-  isPlayerSpeaking: 1
-  text: what?
+  speakerName: cat
+  playerName: cat
+  text: black
   children:
-  - 969081af-3d4d-4b05-949f-1557d71b88ab
+  - f687fb48-9075-4c45-8553-1d4ffea54d75
   rect:
     serializedVersion: 2
-    x: 253
-    y: 14
+    x: 737
+    y: 162
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: BlackColor
+--- !u!114 &5720788006373431536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bbc756a6650ab74bae0f2ae07a11ebf, type: 3}
+  m_Name: 25f30657-c41c-4f2e-bacd-b68259fc2dbe
+  m_EditorClassIdentifier: 
+  speakerName: Mother
+  playerName: cat
+  text: your favorite color?
+  children:
+  - 5ede52f8-b71c-4fb9-8948-6d5d8e71893a
+  - 661f3097-4d0b-4265-9521-9ff89819c2c1
+  rect:
+    serializedVersion: 2
+    x: 500
+    y: 0
     width: 200
     height: 100
   onEnterAction: 
   onExitAction: 
---- !u!114 &8164170111912621569
+--- !u!114 &5755999680538605108
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -176,16 +209,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1bbc756a6650ab74bae0f2ae07a11ebf, type: 3}
-  m_Name: 5a25cae0-cbba-4e59-a484-c5ed22055536
+  m_Name: f216c7ca-80cc-4967-ab91-5f71fcdc5cb4
   m_EditorClassIdentifier: 
-  isPlayerSpeaking: 0
-  text: sorry
-  children:
-  - 99026ee3-097c-4c1e-b2b3-502d2a6e3044
+  speakerName: Mother
+  playerName: cat
+  text: by
+  children: []
   rect:
     serializedVersion: 2
-    x: 993
-    y: 9
+    x: 1230
+    y: 278
     width: 200
     height: 100
   onEnterAction: 

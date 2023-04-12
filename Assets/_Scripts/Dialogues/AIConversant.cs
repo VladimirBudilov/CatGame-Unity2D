@@ -12,12 +12,12 @@ public class AIConversant : MonoBehaviour
 
     private void Start()
     {
-        _playerConversant = GameObject.FindObjectOfType<PlayerConversant>();
-        //gameObject.GetComponent<Button>().onClick.AddListener(() =>_playerConversant.StartDialogue(this, AIDialogue));
+        _playerConversant = FindObjectOfType<PlayerConversant>();
     }
 
-    private void Update()
+    private void OnTriggerStay2D(Collider2D other)
     {
+    
         if (Input.GetKeyDown(KeyCode.G))
         {
             _playerConversant.StartDialogue(this, AIDialogue);

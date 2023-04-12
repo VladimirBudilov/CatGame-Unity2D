@@ -11,6 +11,7 @@ namespace RPG.UI
     {
         private PlayerConversant _playerConversant;
         [SerializeField] private TextMeshProUGUI AIText;
+        [SerializeField] private TextMeshProUGUI SpeakerName;
         [SerializeField] private Button nextButton;
         [SerializeField] private Button quitButton;
         [SerializeField] private Transform playerResponseRoot;
@@ -37,11 +38,13 @@ namespace RPG.UI
             if (_playerConversant.IsChoosing())
             {
                 BuildChoiceList();
+                SpeakerName.text = _playerConversant.GetCurrentSpeakerName();
             }
             else
             {
                 AIText.text = _playerConversant.GetText();
                 nextButton.gameObject.SetActive(_playerConversant.HasNext());
+                SpeakerName.text = _playerConversant.GetCurrentSpeakerName();
             }
             
              
