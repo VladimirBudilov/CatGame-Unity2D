@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8854385423242310236}
   - component: {fileID: 5707085465874461946}
   - component: {fileID: 1115886422}
+  - component: {fileID: 5952437995122136001}
   m_Layer: 12
   m_Name: Door
   m_TagString: Door
@@ -101,6 +102,32 @@ MonoBehaviour:
   _sprite_1: {fileID: -651071270, guid: fd19f02f8ac60ab4cb6df44ab8c4bbb9, type: 3}
   _sprite_2: {fileID: 840576917, guid: fd19f02f8ac60ab4cb6df44ab8c4bbb9, type: 3}
 --- !u!61 &1115886422
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 372331123120197534}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 12.783123, y: 25.06}
+    newSize: {x: 12.783123, y: 25.06}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 12.783123, y: 25.06}
+  m_EdgeRadius: 0
+--- !u!61 &5952437995122136001
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

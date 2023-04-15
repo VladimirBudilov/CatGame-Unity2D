@@ -17,8 +17,8 @@ public class Interaction : MonoBehaviour
     }
     private void Update()
     {
-        _hit = Physics2D.Raycast(transform.position, Vector2.right, _distance, _layerMask);
-        Debug.DrawRay(transform.position, Vector2.right * _distance, Color.red);
+        _hit = Physics2D.Raycast(transform.position, Rotate(), _distance, _layerMask);
+        Debug.DrawRay(transform.position, Rotate() * _distance, Color.red);
     }
     public bool IsNear()
     {
@@ -27,5 +27,14 @@ public class Interaction : MonoBehaviour
             return true;
         }
         return false;
+    }
+
+    Vector2 Rotate()
+    {
+        if (transform.rotation.y == 0)
+        {
+            return Vector2.left;
+        }
+        return Vector2.right;
     }
 }
