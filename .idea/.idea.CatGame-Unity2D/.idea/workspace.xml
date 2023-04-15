@@ -3,23 +3,21 @@
   <component name="ChangeListManager">
     <list default="true" id="d5e866c7-3144-4827-b7c9-be4fd1d4c153" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CatGame-Unity2D/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CatGame-Unity2D/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TheJumpingScene.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TheJumpingScene.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Inventory/Visibility.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Inventory/Visibility.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/SideViewPlayer.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/SideViewPlayer/PlayerMoveSV.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/SideViewPlayer/PlayerMoveSV.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/SideViewPlayer/RangeAttackSV.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/SideViewPlayer/RangeAttackSV.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/SideViewPlayer/TongueHookSV.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/SideViewPlayer/TongueHookSV.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/TopViewPlayer.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/TopViewPlayer/PlayerMoveTV.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/TopViewPlayer/PlayerMoveTV.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/TopViewPlayer/RangeAttackTV.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/TopViewPlayer/RangeAttackTV.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/TopViewPlayer/TongueHookTV.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/TopViewPlayer/TongueHookTV.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Dialogue.meta~Stashed changes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Dialogue.meta~Stashed changes.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Dialogue.meta~Updated upstream" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Dialogue.meta~Updated upstream.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Dialogue/New Dialogue.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Dialogue/New Dialogue.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Dialogue/Dialogue.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Dialogue/Dialogue.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Dialogue/Mother.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Dialogue/Mother.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Dialogue/Mother.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Dialogue/Mother.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player/PlayerSV.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player/PlayerSV.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TheJumpingScene.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TheJumpingScene.unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Dialogues/AIConversant.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Dialogues/AIConversant.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Dialogues/DialogueNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Dialogues/DialogueNode.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Dialogues/PlayerConversant.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Dialogues/PlayerConversant.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Mother.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Mother.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/UI/DialogueUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/UI/DialogueUI.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -27,9 +25,13 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e8a406da998549af9a2680936c7da25a159c00/81/a8763d99/Object.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="false" />
   <component name="ProjectId" id="2MeGYKdMZwQWfrjgGsXAnp940Av" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -47,7 +49,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.language&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.codegpt&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -110,14 +112,29 @@
       <workItem from="1679241965546" duration="750000" />
       <workItem from="1679644616583" duration="36207000" />
       <workItem from="1680425508303" duration="2439000" />
+      <workItem from="1681022676800" duration="921000" />
+      <workItem from="1681023659967" duration="4439000" />
+      <workItem from="1681315478913" duration="5551000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="false" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />

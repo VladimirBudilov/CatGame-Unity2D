@@ -4,7 +4,11 @@
 TagManager:
   serializedVersion: 2
   tags:
+<<<<<<< HEAD
   - Door
+=======
+  - Mother
+>>>>>>> e2a82a5ecca577b7182279e14b586c15788390be
   layers:
   - Default
   - TransparentFX

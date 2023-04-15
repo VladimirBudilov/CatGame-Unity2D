@@ -3,12 +3,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace RPG.Dialogue
 {
     public class DialogueNode : ScriptableObject
     {
+        
         [SerializeField]
+        string speakerName;
+        [SerializeField]
+        string playerName = "cat";
         bool isPlayerSpeaking = false;
         [SerializeField]
         string text;
@@ -20,8 +25,16 @@ namespace RPG.Dialogue
         string onEnterAction;
         [SerializeField]
         string onExitAction;
+        
 
-
+        public string GetSpeakerName()
+        {
+        return speakerName;
+        }
+        public string GetPlayerName()
+        {
+            return playerName;
+        }
         public Rect GetRect()
         {
             return rect;
@@ -44,7 +57,7 @@ namespace RPG.Dialogue
 
         public string GetOnEnterAction()
         {
-            return onEnterAction;
+            return  onEnterAction;
         }
 
         public string GetOnExitAction()
@@ -91,6 +104,7 @@ namespace RPG.Dialogue
             EditorUtility.SetDirty(this);
         }
 #endif
+        
     }
 }
 
