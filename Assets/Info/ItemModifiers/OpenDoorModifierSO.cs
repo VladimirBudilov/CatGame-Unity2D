@@ -7,6 +7,14 @@ public class OpenDoorModifierSO : OpenDoorSO
 {
     public override void ActionAffect(GameObject gameObject)
     {
-        gameObject.GetComponent<Door>().OpenDoor();
+        GameObject player = GameObject.Find("PlayerSV");
+        if (player.GetComponent<Interaction>().IsNear())
+        {
+            gameObject.GetComponent<Door>().OpenDoor();
+        }
+        else
+        {
+            Debug.Log("Подойдите к двери");
+        }
     }
 }
