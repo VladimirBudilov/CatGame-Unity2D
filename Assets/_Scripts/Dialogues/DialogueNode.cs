@@ -14,6 +14,7 @@ namespace RPG.Dialogue
         string speakerName;
         [SerializeField]
         string playerName = "cat";
+        [SerializeField]
         bool isPlayerSpeaking = false;
         [SerializeField]
         string text;

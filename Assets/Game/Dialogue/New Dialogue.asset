@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speakerName: Mother
   playerName: cat
+  isPlayerSpeaking: 0
   text: hay
   children:
   - 0bc28210-b0db-4436-a44f-24380d40197b
@@ -40,6 +41,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speakerName: cat
   playerName: cat
+  isPlayerSpeaking: 1
   text: by
   children:
   - f216c7ca-80cc-4967-ab91-5f71fcdc5cb4
@@ -65,6 +67,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speakerName: cat
   playerName: cat
+  isPlayerSpeaking: 1
   text: hay
   children:
   - 25f30657-c41c-4f2e-bacd-b68259fc2dbe
@@ -90,6 +93,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speakerName: cat
   playerName: cat
+  isPlayerSpeaking: 1
   text: white
   children:
   - f687fb48-9075-4c45-8553-1d4ffea54d75
@@ -137,6 +141,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speakerName: Mother
   playerName: cat
+  isPlayerSpeaking: 0
   text: here it is
   children:
   - f216c7ca-80cc-4967-ab91-5f71fcdc5cb4
@@ -162,6 +167,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speakerName: cat
   playerName: cat
+  isPlayerSpeaking: 1
   text: black
   children:
   - f687fb48-9075-4c45-8553-1d4ffea54d75
@@ -187,13 +193,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speakerName: Mother
   playerName: cat
+  isPlayerSpeaking: 0
   text: your favorite color?
   children:
   - 5ede52f8-b71c-4fb9-8948-6d5d8e71893a
   - 661f3097-4d0b-4265-9521-9ff89819c2c1
   rect:
     serializedVersion: 2
-    x: 500
+    x: 501
     y: 0
     width: 200
     height: 100
@@ -213,6 +220,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speakerName: Mother
   playerName: cat
+  isPlayerSpeaking: 0
   text: by
   children: []
   rect:

@@ -116,11 +116,7 @@ namespace RPG.Dialogue
 
         public string GetCurrentSpeakerName()
         {
-            if (isChoosing)
-                return currentNode.GetPlayerName();
-            else
-                return currentNode.GetSpeakerName();
-            
+            return isChoosing ? currentNode.GetPlayerName() : currentNode.GetSpeakerName();
         }
     }
 }

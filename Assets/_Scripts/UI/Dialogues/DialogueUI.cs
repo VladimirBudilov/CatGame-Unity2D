@@ -10,14 +10,14 @@ namespace RPG.UI
     public class DialogueUI : MonoBehaviour
     {
         private PlayerConversant _playerConversant;
-        [SerializeField] private TextMeshProUGUI AIText;
-        [SerializeField] private TextMeshProUGUI SpeakerName;
+        [SerializeField] private TextMeshProUGUI aiText;
+        [SerializeField] private TextMeshProUGUI speakerName;
         [SerializeField] private Button nextButton;
         [SerializeField] private Button quitButton;
         [SerializeField] private Transform playerResponseRoot;
         [SerializeField] private GameObject choiceButton;
-        [SerializeField] private GameObject AIResponse;
-        [SerializeField] private GameObject PlayerResponse;
+        [SerializeField] private GameObject aiResponse;
+        [SerializeField] private GameObject playerResponse;
 
         private void Start()
         {
@@ -31,20 +31,17 @@ namespace RPG.UI
         private void UpdateUI()
         {
             gameObject.SetActive(_playerConversant.IsActive());
-            if (!_playerConversant.IsActive())
+            if (!_playerConversant.IsActive()) 
                 return;
-            AIResponse.SetActive(!_playerConversant.IsChoosing());
-            PlayerResponse.SetActive(_playerConversant.IsChoosing());
+            aiResponse.SetActive(!_playerConversant.IsChoosing());
+            playerResponse.SetActive(_playerConversant.IsChoosing());
+            speakerName.text = _playerConversant.GetCurrentSpeakerName();
             if (_playerConversant.IsChoosing())
-            {
                 BuildChoiceList();
-                SpeakerName.text = _playerConversant.GetCurrentSpeakerName();
-            }
             else
             {
-                AIText.text = _playerConversant.GetText();
+                aiText.text = _playerConversant.GetText();
                 nextButton.gameObject.SetActive(_playerConversant.HasNext());
-                SpeakerName.text = _playerConversant.GetCurrentSpeakerName();
             }
             
              
