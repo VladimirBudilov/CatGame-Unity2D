@@ -49,6 +49,7 @@ GameObject:
   - component: {fileID: 8281005546269093715}
   - component: {fileID: 60739956}
   - component: {fileID: 60739964}
+  - component: {fileID: 3948997004647322266}
   m_Layer: 9
   m_Name: PlayerSV
   m_TagString: Player
@@ -114,7 +115,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 10
+  m_SortingOrder: 6
   m_Sprite: {fileID: 21300000, guid: e795565cc4f96cb4da3f6f8ec9c236ad, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -265,6 +266,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 323a381de6ad34347ba6bfc86f86e17d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &3948997004647322266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1247780953366641746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a66e2fee149981a408c022680e506f87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statuses:
+  - quest: {fileID: 11400000, guid: 562f6b72768a5fb439dd6d68509ecb0f, type: 2}
+    completedObjectives:
+    - Get bread
+  - quest: {fileID: 11400000, guid: 22489f3c1591cba4b8fa44680d1d06aa, type: 2}
+    completedObjectives:
+    - Get key
 --- !u!1 &1247780953947182384
 GameObject:
   m_ObjectHideFlags: 0
