@@ -5,29 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d5e866c7-3144-4827-b7c9-be4fd1d4c153" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Quests.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Quests/Journey to bakery.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Quests/Journey to bakery.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Quests/Way to home.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Quests/Way to home.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/Quests/QuestList.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/Quests/QuestList.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/Quests/QuestStatus.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/Quests/QuestStatus.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/UI/Quests/QuestItemUI.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/UI/Quests/QuestItemUI.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/UI/Quests/QuestListUI.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/UI/Quests/QuestListUI.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/UI/Quests/QuestTooltipUI.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/UI/Quests/QuestTooltipUI.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/Quests/QuestGiver.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CatGame-Unity2D/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CatGame-Unity2D/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player/PlayerSV.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player/PlayerSV.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Quests/Objective.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Quests/Objective.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Quests/Quest Tips.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Quests/Quest Tips.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Quests/Quest UI.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Quests/Quest UI.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Quests/Quest.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Quests/Quest.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TheJumpingScene &amp; Dialogue.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TheJumpingScene &amp; Dialogue.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/UI/Quests/QuestTipSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/UI/Quests/QuestTipSpawner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Dialogue/mother.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Dialogue/mother.prefab" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,7 +126,7 @@
       <workItem from="1681748707500" duration="1328000" />
       <workItem from="1681900418021" duration="52000" />
       <workItem from="1681916565222" duration="6324000" />
-      <workItem from="1682088294135" duration="9686000" />
+      <workItem from="1682088294135" duration="10826000" />
     </task>
     <servers />
   </component>

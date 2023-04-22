@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-5370031772053040475
+--- !u!114 &-4180572462552767630
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10,15 +10,228 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1bbc756a6650ab74bae0f2ae07a11ebf, type: 3}
-  m_Name: 488f9bbe-1c77-488f-acd0-c3e873513a93
+  m_Name: 2442732a-9290-4769-9013-f604abd13797
   m_EditorClassIdentifier: 
-  speakerName: Mother
-  playerName: cat
   isPlayerSpeaking: 0
-  text: hay
+  text: nope, child
   children:
-  - 0bc28210-b0db-4436-a44f-24380d40197b
-  - 24ff5705-5924-4bba-8c86-a191cd846d7b
+  - 412565a0-bc77-4311-8ee7-acc2d803c62b
+  rect:
+    serializedVersion: 2
+    x: 826
+    y: 198
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+--- !u!114 &-3632337569410169244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bbc756a6650ab74bae0f2ae07a11ebf, type: 3}
+  m_Name: d54ff58a-014b-4d72-8bc2-8b5430237d48
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: thx, by
+  children:
+  - bae32c17-c75e-4c81-ab75-cbfd4f72ac7a
+  rect:
+    serializedVersion: 2
+    x: 1092
+    y: 2
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: GiveBugSpray
+--- !u!114 &-2734003246265448398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bbc756a6650ab74bae0f2ae07a11ebf, type: 3}
+  m_Name: d534504c-cfe3-4682-b67e-bd4600b19241
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: here it is
+  children:
+  - 3cdec035-bb75-4b7a-b88f-2753ba70753f
+  - de01fad3-7565-4d7b-89a6-601c5e4846b0
+  rect:
+    serializedVersion: 2
+    x: 418
+    y: -3
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: GiveBread
+--- !u!114 &-1936462784720713246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bbc756a6650ab74bae0f2ae07a11ebf, type: 3}
+  m_Name: 3cdec035-bb75-4b7a-b88f-2753ba70753f
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: mom asked bug spray
+  children:
+  - 9eb09d0b-acb7-49ca-86e4-6da1be6f9259
+  rect:
+    serializedVersion: 2
+    x: 629
+    y: -4
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+--- !u!114 &-1883927391744401542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bbc756a6650ab74bae0f2ae07a11ebf, type: 3}
+  m_Name: de01fad3-7565-4d7b-89a6-601c5e4846b0
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: I wanna bug spray
+  children:
+  - 2442732a-9290-4769-9013-f604abd13797
+  rect:
+    serializedVersion: 2
+    x: 608
+    y: 203
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+--- !u!114 &-813297140479518276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bbc756a6650ab74bae0f2ae07a11ebf, type: 3}
+  m_Name: 412565a0-bc77-4311-8ee7-acc2d803c62b
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: okaay, by
+  children:
+  - bae32c17-c75e-4c81-ab75-cbfd4f72ac7a
+  rect:
+    serializedVersion: 2
+    x: 1076
+    y: 197
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+--- !u!114 &-529094065365722033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bbc756a6650ab74bae0f2ae07a11ebf, type: 3}
+  m_Name: 92f6a617-e29e-490c-9836-a4b86c8ccb62
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: hi
+  children:
+  - e435debb-a2a8-4c3b-89b4-4a2653e1aec3
+  rect:
+    serializedVersion: 2
+    x: 0
+    y: -1
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3aeb73d696901e74eba1e57ef6f785bd, type: 3}
+  m_Name: Dialogue with Baker
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: -529094065365722033}
+  - {fileID: 7141901388250545507}
+  - {fileID: -2734003246265448398}
+  - {fileID: -1883927391744401542}
+  - {fileID: -1936462784720713246}
+  - {fileID: -4180572462552767630}
+  - {fileID: 2084978164173077035}
+  - {fileID: -3632337569410169244}
+  - {fileID: -813297140479518276}
+  - {fileID: 7452942372425598826}
+  newNodeOffset: {x: 250, y: 0}
+--- !u!114 &2084978164173077035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bbc756a6650ab74bae0f2ae07a11ebf, type: 3}
+  m_Name: 9eb09d0b-acb7-49ca-86e4-6da1be6f9259
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: here it is
+  children:
+  - d54ff58a-014b-4d72-8bc2-8b5430237d48
+  rect:
+    serializedVersion: 2
+    x: 842
+    y: 2
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+--- !u!114 &4470928901386052662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bbc756a6650ab74bae0f2ae07a11ebf, type: 3}
+  m_Name: 3f735b35-14a7-49ce-8f9e-67cdc63df4af
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: 
+  children: []
   rect:
     serializedVersion: 2
     x: 0
@@ -27,7 +240,7 @@ MonoBehaviour:
     height: 100
   onEnterAction: 
   onExitAction: 
---- !u!114 &-2670483811349934499
+--- !u!114 &7141901388250545507
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -37,23 +250,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1bbc756a6650ab74bae0f2ae07a11ebf, type: 3}
-  m_Name: 24ff5705-5924-4bba-8c86-a191cd846d7b
+  m_Name: e435debb-a2a8-4c3b-89b4-4a2653e1aec3
   m_EditorClassIdentifier: 
-  speakerName: cat
-  playerName: cat
   isPlayerSpeaking: 1
-  text: by
+  text: hi, I wanna bread
   children:
-  - f216c7ca-80cc-4967-ab91-5f71fcdc5cb4
+  - d534504c-cfe3-4682-b67e-bd4600b19241
   rect:
     serializedVersion: 2
-    x: 265
-    y: 277
+    x: 209
+    y: -1
     width: 200
     height: 100
   onEnterAction: 
   onExitAction: 
---- !u!114 &-1576541279694288045
+--- !u!114 &7452942372425598826
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -63,170 +274,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1bbc756a6650ab74bae0f2ae07a11ebf, type: 3}
-  m_Name: 0bc28210-b0db-4436-a44f-24380d40197b
+  m_Name: bae32c17-c75e-4c81-ab75-cbfd4f72ac7a
   m_EditorClassIdentifier: 
-  speakerName: cat
-  playerName: cat
-  isPlayerSpeaking: 1
-  text: hay
-  children:
-  - 25f30657-c41c-4f2e-bacd-b68259fc2dbe
-  rect:
-    serializedVersion: 2
-    x: 251
-    y: 0
-    width: 200
-    height: 100
-  onEnterAction: 
-  onExitAction: 
---- !u!114 &-637286598182684050
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1bbc756a6650ab74bae0f2ae07a11ebf, type: 3}
-  m_Name: 5ede52f8-b71c-4fb9-8948-6d5d8e71893a
-  m_EditorClassIdentifier: 
-  speakerName: cat
-  playerName: cat
-  isPlayerSpeaking: 1
-  text: white
-  children:
-  - f687fb48-9075-4c45-8553-1d4ffea54d75
-  rect:
-    serializedVersion: 2
-    x: 731
-    y: 0
-    width: 200
-    height: 100
-  onEnterAction: 
-  onExitAction: WhiteColor
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3aeb73d696901e74eba1e57ef6f785bd, type: 3}
-  m_Name: New Dialogue
-  m_EditorClassIdentifier: 
-  nodes:
-  - {fileID: -5370031772053040475}
-  - {fileID: -1576541279694288045}
-  - {fileID: -2670483811349934499}
-  - {fileID: 5755999680538605108}
-  - {fileID: 5720788006373431536}
-  - {fileID: -637286598182684050}
-  - {fileID: 2947076411118771701}
-  - {fileID: 955074371021918693}
-  newNodeOffset: {x: 250, y: 0}
---- !u!114 &955074371021918693
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1bbc756a6650ab74bae0f2ae07a11ebf, type: 3}
-  m_Name: f687fb48-9075-4c45-8553-1d4ffea54d75
-  m_EditorClassIdentifier: 
-  speakerName: Mother
-  playerName: cat
   isPlayerSpeaking: 0
-  text: here it is
-  children:
-  - f216c7ca-80cc-4967-ab91-5f71fcdc5cb4
-  rect:
-    serializedVersion: 2
-    x: 1017
-    y: 52
-    width: 200
-    height: 100
-  onEnterAction: 
-  onExitAction: 
---- !u!114 &2947076411118771701
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1bbc756a6650ab74bae0f2ae07a11ebf, type: 3}
-  m_Name: 661f3097-4d0b-4265-9521-9ff89819c2c1
-  m_EditorClassIdentifier: 
-  speakerName: cat
-  playerName: cat
-  isPlayerSpeaking: 1
-  text: black
-  children:
-  - f687fb48-9075-4c45-8553-1d4ffea54d75
-  rect:
-    serializedVersion: 2
-    x: 737
-    y: 162
-    width: 200
-    height: 100
-  onEnterAction: 
-  onExitAction: BlackColor
---- !u!114 &5720788006373431536
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1bbc756a6650ab74bae0f2ae07a11ebf, type: 3}
-  m_Name: 25f30657-c41c-4f2e-bacd-b68259fc2dbe
-  m_EditorClassIdentifier: 
-  speakerName: Mother
-  playerName: cat
-  isPlayerSpeaking: 0
-  text: your favorite color?
-  children:
-  - 5ede52f8-b71c-4fb9-8948-6d5d8e71893a
-  - 661f3097-4d0b-4265-9521-9ff89819c2c1
-  rect:
-    serializedVersion: 2
-    x: 501
-    y: 0
-    width: 200
-    height: 100
-  onEnterAction: 
-  onExitAction: 
---- !u!114 &5755999680538605108
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1bbc756a6650ab74bae0f2ae07a11ebf, type: 3}
-  m_Name: f216c7ca-80cc-4967-ab91-5f71fcdc5cb4
-  m_EditorClassIdentifier: 
-  speakerName: Mother
-  playerName: cat
-  isPlayerSpeaking: 0
-  text: by
+  text: see you next time
   children: []
   rect:
     serializedVersion: 2
-    x: 1230
-    y: 278
+    x: 1358
+    y: 34
     width: 200
     height: 100
   onEnterAction: 

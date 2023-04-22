@@ -8,6 +8,7 @@ using UnityEngine.UI;
 public class AIConversant : MonoBehaviour
 {
     [SerializeField] private Dialogue AIDialogue;
+    [SerializeField] private string AIName = "somebody";
     private PlayerConversant _playerConversant;
 
     private void Start()
@@ -22,5 +23,10 @@ public class AIConversant : MonoBehaviour
         {
             _playerConversant.StartDialogue(this, AIDialogue);
         }
+    }
+
+    public string GetAIConversantName()
+    {
+        return AIName;
     }
 }

@@ -16,6 +16,7 @@ namespace RPG.Dialogue
         private DialogueNode currentNode = null;
         private bool isChoosing = false;
         private AIConversant currentConversant = null;
+        private string playerName = "Cat";
         public event Action onConversationUpdated;
 
         public bool IsActive()
@@ -75,10 +76,8 @@ namespace RPG.Dialogue
                 onConversationUpdated();
                 return;
             }
-
             var children = currentDialogue.GetAIChildren(currentNode).ToArray();
             TriggerExitAction();
-
             currentNode = children[Random.Range(0, children.Length)];
             TriggerEnterAction();
             onConversationUpdated();
@@ -116,7 +115,7 @@ namespace RPG.Dialogue
 
         public string GetCurrentSpeakerName()
         {
-            return isChoosing ? currentNode.GetPlayerName() : currentNode.GetSpeakerName();
+            return isChoosing ? playerName : currentConversant.GetAIConversantName();
         }
     }
 }

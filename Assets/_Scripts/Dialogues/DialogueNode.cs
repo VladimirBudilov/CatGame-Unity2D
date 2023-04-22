@@ -11,10 +11,6 @@ namespace RPG.Dialogue
     {
         
         [SerializeField]
-        string speakerName;
-        [SerializeField]
-        string playerName = "cat";
-        [SerializeField]
         bool isPlayerSpeaking = false;
         [SerializeField]
         string text;
@@ -27,15 +23,6 @@ namespace RPG.Dialogue
         [SerializeField]
         string onExitAction;
         
-
-        public string GetSpeakerName()
-        {
-        return speakerName;
-        }
-        public string GetPlayerName()
-        {
-            return playerName;
-        }
         public Rect GetRect()
         {
             return rect;

@@ -1,0 +1,241 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7907269104501669221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bbc756a6650ab74bae0f2ae07a11ebf, type: 3}
+  m_Name: 7e362fb1-c045-4a44-a7c8-d68c6c9d9999
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: also, we have spaier at home. I hope Baker can borrow bug spray.
+  children:
+  - 3dbe632a-62eb-4500-b486-aebb4f5170c7
+  rect:
+    serializedVersion: 2
+    x: 976
+    y: 0
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+--- !u!114 &-6163407133110733489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bbc756a6650ab74bae0f2ae07a11ebf, type: 3}
+  m_Name: 8c26345c-6755-43d2-8b2f-1c3dbda0c5cb
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: sure
+  children:
+  - 7e362fb1-c045-4a44-a7c8-d68c6c9d9999
+  rect:
+    serializedVersion: 2
+    x: 727
+    y: 0
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+--- !u!114 &-2117258640336883594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bbc756a6650ab74bae0f2ae07a11ebf, type: 3}
+  m_Name: 9a3d0e22-56c2-4087-8238-ec915b641359
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Dont wanna
+  children:
+  - 9b04a246-15f2-4112-9178-7f32a524508e
+  rect:
+    serializedVersion: 2
+    x: 718
+    y: 290
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3aeb73d696901e74eba1e57ef6f785bd, type: 3}
+  m_Name: Dialogue with Mother
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 2766745505324364092}
+  - {fileID: 1284868016280932876}
+  - {fileID: 1313801208725269292}
+  - {fileID: -6163407133110733489}
+  - {fileID: -7907269104501669221}
+  - {fileID: -2117258640336883594}
+  - {fileID: 7949518817714739319}
+  - {fileID: 377237990567466544}
+  - {fileID: 7374333084335852210}
+  newNodeOffset: {x: 250, y: 0}
+--- !u!114 &377237990567466544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bbc756a6650ab74bae0f2ae07a11ebf, type: 3}
+  m_Name: 3dbe632a-62eb-4500-b486-aebb4f5170c7
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: okaaay
+  children:
+  - 2888f49a-3d9e-44fd-98d0-c5abb0c3fd16
+  rect:
+    serializedVersion: 2
+    x: 1226
+    y: -1
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: GiveQuest
+--- !u!114 &1284868016280932876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bbc756a6650ab74bae0f2ae07a11ebf, type: 3}
+  m_Name: 5e2ab318-7567-48f1-85ca-0f8c2fd4f820
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: hy, mom
+  children:
+  - 5fd7aaed-2668-4e85-aac1-00288da3224e
+  rect:
+    serializedVersion: 2
+    x: 251
+    y: 0
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+--- !u!114 &1313801208725269292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bbc756a6650ab74bae0f2ae07a11ebf, type: 3}
+  m_Name: 5fd7aaed-2668-4e85-aac1-00288da3224e
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: could you buy bread?
+  children:
+  - 8c26345c-6755-43d2-8b2f-1c3dbda0c5cb
+  - 9a3d0e22-56c2-4087-8238-ec915b641359
+  rect:
+    serializedVersion: 2
+    x: 477
+    y: 0
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+--- !u!114 &2766745505324364092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bbc756a6650ab74bae0f2ae07a11ebf, type: 3}
+  m_Name: 88ceaff6-da40-4794-bd31-1df87bb1f649
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: hi, son
+  children:
+  - 5e2ab318-7567-48f1-85ca-0f8c2fd4f820
+  rect:
+    serializedVersion: 2
+    x: 1
+    y: 0
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+--- !u!114 &7374333084335852210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bbc756a6650ab74bae0f2ae07a11ebf, type: 3}
+  m_Name: 2888f49a-3d9e-44fd-98d0-c5abb0c3fd16
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: have a nice way!
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1422
+    y: 5
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+--- !u!114 &7949518817714739319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bbc756a6650ab74bae0f2ae07a11ebf, type: 3}
+  m_Name: 9b04a246-15f2-4112-9178-7f32a524508e
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: you have to)
+  children:
+  - 7e362fb1-c045-4a44-a7c8-d68c6c9d9999
+  rect:
+    serializedVersion: 2
+    x: 724
+    y: 149
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
