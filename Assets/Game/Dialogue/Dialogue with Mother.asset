@@ -24,6 +24,9 @@ MonoBehaviour:
     height: 100
   onEnterAction: 
   onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
 --- !u!114 &-6163407133110733489
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48,6 +51,9 @@ MonoBehaviour:
     height: 100
   onEnterAction: 
   onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
 --- !u!114 &-2117258640336883594
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -72,6 +78,9 @@ MonoBehaviour:
     height: 100
   onEnterAction: 
   onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -119,6 +128,9 @@ MonoBehaviour:
     height: 100
   onEnterAction: 
   onExitAction: GiveQuest
+  condition:
+    predicate: 
+    parameters: []
 --- !u!114 &1284868016280932876
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -143,6 +155,10 @@ MonoBehaviour:
     height: 100
   onEnterAction: 
   onExitAction: 
+  condition:
+    predicate: 
+    parameters:
+    - 
 --- !u!114 &1313801208725269292
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -168,6 +184,9 @@ MonoBehaviour:
     height: 100
   onEnterAction: 
   onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
 --- !u!114 &2766745505324364092
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -192,6 +211,9 @@ MonoBehaviour:
     height: 100
   onEnterAction: 
   onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
 --- !u!114 &7374333084335852210
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -215,6 +237,9 @@ MonoBehaviour:
     height: 100
   onEnterAction: 
   onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
 --- !u!114 &7949518817714739319
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -239,3 +264,6 @@ MonoBehaviour:
     height: 100
   onEnterAction: 
   onExitAction: 
+  condition:
+    predicate: 
+    parameters: []

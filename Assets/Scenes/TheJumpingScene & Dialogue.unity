@@ -521,6 +521,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 60739964, guid: fe6d641b839653848ad8fb363f363103, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1247780953366641746, guid: fe6d641b839653848ad8fb363f363103, type: 3}
       propertyPath: m_Name
       value: PlayerSV
@@ -1792,6 +1796,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1354929129992144891, guid: 588d48107bbb4344aa9b981c76372a3f, type: 3}
+      propertyPath: bread
+      value: GetBread
+      objectReference: {fileID: 0}
+    - target: {fileID: 1354929129992144891, guid: 588d48107bbb4344aa9b981c76372a3f, type: 3}
+      propertyPath: bugSpray
+      value: GetbugSpray
+      objectReference: {fileID: 0}
+    - target: {fileID: 4382168746345199240, guid: 588d48107bbb4344aa9b981c76372a3f, type: 3}
+      propertyPath: quest
+      value: 
+      objectReference: {fileID: 11400000, guid: 22489f3c1591cba4b8fa44680d1d06aa, type: 2}
     - target: {fileID: 5080916150416594085, guid: 588d48107bbb4344aa9b981c76372a3f, type: 3}
       propertyPath: m_RootOrder
       value: 8

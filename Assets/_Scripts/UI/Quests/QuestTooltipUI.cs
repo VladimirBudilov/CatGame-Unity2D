@@ -1,28 +1,58 @@
 using System.Collections;
 using System.Collections.Generic;
-using _Scripts.Quests;
+using System.Linq;
 using TMPro;
 using UnityEngine;
-
 public class QuestTooltipUI : MonoBehaviour
 {
-    [SerializeField] private TextMeshProUGUI title;
-    [SerializeField] private Transform objectiveContainer;
-    [SerializeField] private GameObject objectivePref;
-    [SerializeField] private GameObject objectiveIncompletePref;
-    
-    
+    [SerializeField] TextMeshProUGUI title;
+    [SerializeField] Transform objectiveContainer;
+    [SerializeField] GameObject objectivePrefab;
+    [SerializeField] GameObject objectiveIncompletePrefab;
+    [SerializeField] TextMeshProUGUI rewardText;
+
     public void Setup(QuestStatus status)
     {
-       
-        title.text = status.Quest.GetTitle();
-        objectiveContainer.DetachChildren();
-        foreach (var objective in status.Quest.GetObjectives())
+        Quest quest = status.GetQuest();
+        title.text = quest.GetTitle();
+        foreach (Transform item in objectiveContainer)
         {
-            GameObject pref = status.IsObjectiveCompleted(objective) ? objectivePref : objectiveIncompletePref; 
-            var newObjective = Instantiate(pref, objectiveContainer);
-            newObjective.GetComponentInChildren<TextMeshProUGUI>().text = objective;
+            Destroy(item.gameObject);
         }
-        
+        foreach (var objective in quest.GetObjectives())
+        {
+            GameObject prefab = objectiveIncompletePrefab;
+            if (status.IsObjectiveComplete(objective.reference))
+            {
+                prefab = objectivePrefab;
+            }
+            GameObject objectiveInstance = Instantiate(prefab, objectiveContainer);
+            TextMeshProUGUI objectiveText = objectiveInstance.GetComponentInChildren<TextMeshProUGUI>();
+            objectiveText.text = objective.description;
+        }
+        rewardText.text = GetRewardText(quest);
+    }
+
+    private string GetRewardText(Quest quest)
+    {
+        string rewardText = "";
+        foreach (var reward in quest.GetRewards())
+        {
+            if (rewardText != "")
+            {
+                rewardText += ", ";
+            }
+            if (reward.number > 1)
+            {
+                rewardText += reward.number + " ";
+            }
+            rewardText += reward.item.Name;
+        }
+        if (rewardText == "")
+        {
+            rewardText = "No reward";
+        }
+        rewardText += ".";
+        return rewardText;
     }
 }
