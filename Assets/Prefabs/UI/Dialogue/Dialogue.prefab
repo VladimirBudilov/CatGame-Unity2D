@@ -1723,14 +1723,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b9c0864200482b8b5bdad51e55e54c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AIText: {fileID: 5847113071815715788}
-  SpeakerName: {fileID: 7001453527635224253}
+  aiText: {fileID: 0}
+  speakerName: {fileID: 0}
   nextButton: {fileID: 2168989237834277005}
   quitButton: {fileID: 7017331983939028502}
   playerResponseRoot: {fileID: 6313495062452817692}
   choiceButton: {fileID: 2274497405241095248, guid: 1461278133c1b184aa0942a10f5ecb15, type: 3}
-  AIResponse: {fileID: 6592708994348214933}
-  PlayerResponse: {fileID: 2676358840778852851}
+  aiResponse: {fileID: 0}
+  playerResponse: {fileID: 0}
 --- !u!1 &6592708994348214933
 GameObject:
   m_ObjectHideFlags: 0
@@ -2373,6 +2373,30 @@ PrefabInstance:
     - target: {fileID: 2274497405241095248, guid: 1461278133c1b184aa0942a10f5ecb15, type: 3}
       propertyPath: m_Name
       value: Button 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137316778704778678, guid: 1461278133c1b184aa0942a10f5ecb15, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137316778704778678, guid: 1461278133c1b184aa0942a10f5ecb15, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137316778704778678, guid: 1461278133c1b184aa0942a10f5ecb15, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137316778704778678, guid: 1461278133c1b184aa0942a10f5ecb15, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137316778704778678, guid: 1461278133c1b184aa0942a10f5ecb15, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137316778704778678, guid: 1461278133c1b184aa0942a10f5ecb15, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7500904049770622964, guid: 1461278133c1b184aa0942a10f5ecb15, type: 3}
       propertyPath: m_Pivot.x
