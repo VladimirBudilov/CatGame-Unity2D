@@ -17,4 +17,9 @@ public class PIckUpSystem : MonoBehaviour
                 item.Amount = reminder;
         }
     }
+
+    public void AddItem(Quest.Reward item)
+    {
+        _inventoryData.AddItem(item.item, item.number);
+    }
 }

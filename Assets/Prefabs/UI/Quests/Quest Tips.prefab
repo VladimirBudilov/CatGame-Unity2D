@@ -210,7 +210,7 @@ GameObject:
   - component: {fileID: 8674604813220839140}
   - component: {fileID: 7872226573354930828}
   m_Layer: 0
-  m_Name: Revords Text
+  m_Name: Rewards Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -345,7 +345,7 @@ GameObject:
   - component: {fileID: 1858304051222478210}
   - component: {fileID: 2899808577851514675}
   m_Layer: 0
-  m_Name: Revords
+  m_Name: Rewards
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -593,6 +593,7 @@ MonoBehaviour:
   objectiveContainer: {fileID: 1914139041411856874}
   objectivePref: {fileID: 294763864783267440, guid: 8a252728937b4a9448912c2ae8c72f6e, type: 3}
   objectiveIncompletePref: {fileID: 7702674126185091561, guid: 6736df0d2dbcec240b4c56f455bf65f7, type: 3}
+  rewardText: {fileID: 7872226573354930828}
 --- !u!1 &9200668202509773957
 GameObject:
   m_ObjectHideFlags: 0

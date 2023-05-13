@@ -1,30 +1,71 @@
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
-namespace _Scripts.Quests
+public class QuestStatus
 {
-   
-    public class QuestStatus
+    Quest quest;
+    List<string> completedObjectives = new List<string>();
+
+    [System.Serializable]
+    class QuestStatusRecord
     {
-        private Quest quest; 
-        private List<string> completedObjectives = new List<string>();
-        
-        public Quest Quest => quest;
+        public string questName;
+        public List<string> completedObjectives;
+    }
 
-        public int GetCompletedCount() => completedObjectives.Count;
+    public QuestStatus(Quest quest)
+    {
+        this.quest = quest;
+    }
 
-        public bool IsObjectiveCompleted(string objective) => completedObjectives.Contains(objective);
+    public QuestStatus(object objectState)
+    {
+        QuestStatusRecord state = objectState as QuestStatusRecord;
+        quest = Quest.GetByName(state.questName);
+        completedObjectives = state.completedObjectives;
+    }
 
-        public QuestStatus(Quest quest)
+    public Quest GetQuest()
+    {
+        return quest;
+    }
+
+    public bool IsComplete()
+    {
+        foreach (var objective in quest.GetObjectives())
         {
-            this.quest = quest;
+            if (!completedObjectives.Contains(objective.reference))
+            {
+                return false;
+            }
         }
+        return true;
+    }
 
-        public void CompleteObjective(string objective)
+    public int GetCompletedCount()
+    {
+        return completedObjectives.Count;
+    }
+
+    public bool IsObjectiveComplete(string objective)
+    {
+        return completedObjectives.Contains(objective);
+    }
+
+    public void CompleteObjective(string objective)
+    {
+        if (quest.HasObjective(objective))
         {
-            if(!quest.HasObjective(objective)) return;
             completedObjectives.Add(objective);
-
         }
+    }
+
+    public object CaptureState()
+    {
+        QuestStatusRecord state = new QuestStatusRecord();
+        state.questName = quest.name;
+        state.completedObjectives = completedObjectives;
+        return state;
     }
 }

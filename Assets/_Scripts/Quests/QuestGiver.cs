@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using _Scripts.Quests;
 using UnityEngine;
 
 public class QuestGiver : MonoBehaviour

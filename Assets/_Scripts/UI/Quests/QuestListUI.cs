@@ -4,23 +4,28 @@ using UnityEngine;
 
 public class QuestListUI : MonoBehaviour
 {
-    [SerializeField] GameObject questItemPref;
-    private QuestList quests;
+    [SerializeField] QuestItemUI questPrefab;
+    QuestList questList;
+
+    // Start is called before the first frame update
     void Start()
     {
-        quests = GameObject.FindGameObjectWithTag("Player").GetComponent<QuestList>();
-        UpdateUI();
-        quests.onQuestUpdated += UpdateUI;
+        questList = GameObject.FindGameObjectWithTag("Player").GetComponent<QuestList>();
+        questList.onUpdate += Redraw;
+        Redraw();
     }
 
-    private void UpdateUI()
+    private void Redraw()
     {
-        transform.DetachChildren();
-        quests = GameObject.FindGameObjectWithTag("Player").GetComponent<QuestList>();
-        foreach (var status in quests.GetStatuses())
+        foreach (Transform item in transform)
         {
-            var newQuest = Instantiate(questItemPref, transform);
-            newQuest.GetComponent<QuestItemUI>().Setup(status);
+            Destroy(item.gameObject);
+        }
+
+        foreach (QuestStatus status in questList.GetStatuses())
+        {
+            QuestItemUI uiInstance = Instantiate<QuestItemUI>(questPrefab, transform);
+            uiInstance.Setup(status);
         }
     }
 }

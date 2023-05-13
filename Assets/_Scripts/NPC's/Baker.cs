@@ -13,7 +13,6 @@ public class Baker : MonoBehaviour
     public void GiveBread()
     {
         if(breadWasGiven) return;
-        GetComponent<QuestCompletion>().AddCompletedObjective(bread);
         GetComponent<QuestCompletion>().CompleteObjective();
         Debug.Log("bread Added");
         breadWasGiven = true;
@@ -22,7 +21,6 @@ public class Baker : MonoBehaviour
     public void GiveBugSpray()
     {
         if(bugSprayWasGiven) return;
-        GetComponent<QuestCompletion>().AddCompletedObjective(bugSpray);
         GetComponent<QuestCompletion>().CompleteObjective();
         Debug.Log("bugSpray Added");
         bugSprayWasGiven = true;

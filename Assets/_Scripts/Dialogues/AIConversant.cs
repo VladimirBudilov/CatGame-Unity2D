@@ -25,7 +25,7 @@ public class AIConversant : MonoBehaviour
         }
     }
 
-    public string GetAIConversantName()
+    public string GetName()
     {
         return AIName;
     }

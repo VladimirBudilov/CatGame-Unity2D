@@ -5,9 +5,43 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d5e866c7-3144-4827-b7c9-be4fd1d4c153" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/Quests/QuestGiver.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Inventory.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Inventory/Inventory.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Inventory/Inventory.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Inventory/Item Action Button.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Inventory/Item Action Button.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Inventory/Item UI.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Inventory/Item UI.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/Quests/Condition.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/Quests/Condition.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/Quests/IPredicateEvaluator.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/Quests/IPredicateEvaluator.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CatGame-Unity2D/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CatGame-Unity2D/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Dialogue/mother.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Dialogue/mother.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Dialogue/Dialogue with Baker.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Dialogue/Dialogue with Baker.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Quests/Journey to bakery.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Quests/Journey to bakery.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Inventory.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Inventory.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Item Action Button.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Item Action Button.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Item UI.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Item UI.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Quests/Quest Tips.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Quests/Quest Tips.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TheJumpingScene &amp; Dialogue.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TheJumpingScene &amp; Dialogue.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Dialogues/AIConversant.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Dialogues/AIConversant.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Dialogues/DialogueNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Dialogues/DialogueNode.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Dialogues/PlayerConversant.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Dialogues/PlayerConversant.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Inventory/Pick Up System/PIckUpSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Inventory/Pick Up System/PIckUpSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/NPC's/Baker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/NPC's/Baker.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Quests/Quest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Quests/Quest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Quests/QuestCompletion.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Quests/QuestCompletion.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Quests/QuestGiver.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Quests/QuestGiver.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Quests/QuestList.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Quests/QuestList.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Quests/QuestStatus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Quests/QuestStatus.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/UI/Dialogues/DialogueUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/UI/Dialogues/DialogueUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/UI/Quests/QuestItemUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/UI/Quests/QuestItemUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/UI/Quests/QuestListUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/UI/Quests/QuestListUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/UI/Quests/QuestTooltipUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/UI/Quests/QuestTooltipUI.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +55,8 @@
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Editor/TMPro_CreateObjectMenu.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/70302656008d46b48c99c561b0e145fe45200/0b/9511e2d9/IPointerEnterHandler.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/70302656008d46b48c99c561b0e145fe45200/58/d460f4ed/IPointerExitHandler.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e8a406da998549af9a2680936c7da25a159c00/6b/a92a7d16/Object.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e8a406da998549af9a2680936c7da25a159c00/9b/9b31643f/Component.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e8a406da998549af9a2680936c7da25a159c00/a6/7b7ed568/Transform.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -127,6 +163,10 @@
       <workItem from="1681900418021" duration="52000" />
       <workItem from="1681916565222" duration="6324000" />
       <workItem from="1682088294135" duration="10826000" />
+      <workItem from="1682178740534" duration="27288000" />
+      <workItem from="1682336605814" duration="130000" />
+      <workItem from="1682350392198" duration="6628000" />
+      <workItem from="1682359661978" duration="2589000" />
     </task>
     <servers />
   </component>
