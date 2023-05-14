@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-5281817988768138024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bbc756a6650ab74bae0f2ae07a11ebf, type: 3}
+  m_Name: 66fd963c-1c51-4c3a-b121-4df6374d8dcd
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: whot are you doing?
+  children:
+  - e5e141f8-25d0-4f3f-8afe-7e9797a3076e
+  rect:
+    serializedVersion: 2
+    x: 295
+    y: 493
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and:
+    - or:
+      - predicate: HasQuest
+        parameters:
+        - JourneyToBakery
+        negate: 1
 --- !u!114 &-4180572462552767630
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18,15 +49,14 @@ MonoBehaviour:
   - 412565a0-bc77-4311-8ee7-acc2d803c62b
   rect:
     serializedVersion: 2
-    x: 851
-    y: 200
+    x: 691
+    y: 271
     width: 200
     height: 100
   onEnterAction: 
   onExitAction: 
   condition:
-    predicate: 
-    parameters: []
+    and: []
 --- !u!114 &-3632337569410169244
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45,15 +75,14 @@ MonoBehaviour:
   - bae32c17-c75e-4c81-ab75-cbfd4f72ac7a
   rect:
     serializedVersion: 2
-    x: 1120
-    y: -6
+    x: 850
+    y: 117
     width: 200
     height: 100
   onEnterAction: 
   onExitAction: GiveBugSpray
   condition:
-    predicate: 
-    parameters: []
+    and: []
 --- !u!114 &-2734003246265448398
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -71,17 +100,17 @@ MonoBehaviour:
   children:
   - 3cdec035-bb75-4b7a-b88f-2753ba70753f
   - de01fad3-7565-4d7b-89a6-601c5e4846b0
+  - d54ff58a-014b-4d72-8bc2-8b5430237d48
   rect:
     serializedVersion: 2
-    x: 458
-    y: -1
+    x: 574
+    y: 8
     width: 200
     height: 100
   onEnterAction: 
   onExitAction: GiveBread
   condition:
-    predicate: 
-    parameters: []
+    and: []
 --- !u!114 &-1936462784720713246
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -100,15 +129,24 @@ MonoBehaviour:
   - 9eb09d0b-acb7-49ca-86e4-6da1be6f9259
   rect:
     serializedVersion: 2
-    x: 680
-    y: 1
+    x: 281
+    y: 122
     width: 200
     height: 100
   onEnterAction: 
   onExitAction: 
   condition:
-    predicate: 
-    parameters: []
+    and:
+    - or:
+      - predicate: HasQuest
+        parameters:
+        - JourneyToBakery
+        negate: 0
+    - or:
+      - predicate: HasItem
+        parameters:
+        - Spray
+        negate: 1
 --- !u!114 &-1883927391744401542
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -127,16 +165,24 @@ MonoBehaviour:
   - 2442732a-9290-4769-9013-f604abd13797
   rect:
     serializedVersion: 2
-    x: 635
-    y: 203
+    x: 298
+    y: 263
     width: 200
     height: 100
   onEnterAction: 
   onExitAction: 
   condition:
-    predicate: 
-    parameters:
-    - Journey to bakery
+    and:
+    - or:
+      - predicate: HasItem
+        parameters:
+        - Spray
+        negate: 1
+    - or:
+      - predicate: HasQuest
+        parameters:
+        - JourneyToBakery
+        negate: 0
 --- !u!114 &-813297140479518276
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -155,15 +201,14 @@ MonoBehaviour:
   - bae32c17-c75e-4c81-ab75-cbfd4f72ac7a
   rect:
     serializedVersion: 2
-    x: 1090
-    y: 377
+    x: 1088
+    y: 488
     width: 200
     height: 100
   onEnterAction: 
   onExitAction: 
   condition:
-    predicate: 
-    parameters: []
+    and: []
 --- !u!114 &-529094065365722033
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -179,19 +224,20 @@ MonoBehaviour:
   isPlayerSpeaking: 0
   text: hi
   children:
-  - e435debb-a2a8-4c3b-89b4-4a2653e1aec3
   - f17fb07a-655f-4179-b50c-22683ea799e9
+  - 66fd963c-1c51-4c3a-b121-4df6374d8dcd
+  - de01fad3-7565-4d7b-89a6-601c5e4846b0
+  - 3cdec035-bb75-4b7a-b88f-2753ba70753f
   rect:
     serializedVersion: 2
-    x: -3
-    y: -7
+    x: 42
+    y: 111
     width: 200
     height: 100
   onEnterAction: 
   onExitAction: 
   condition:
-    predicate: 
-    parameters: []
+    and: []
 --- !u!114 &-378983205028900315
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -205,20 +251,29 @@ MonoBehaviour:
   m_Name: f17fb07a-655f-4179-b50c-22683ea799e9
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: what are you doing?
+  text: hi, I wanna bread
   children:
-  - e5e141f8-25d0-4f3f-8afe-7e9797a3076e
+  - d534504c-cfe3-4682-b67e-bd4600b19241
   rect:
     serializedVersion: 2
-    x: 217
-    y: 158
+    x: 297
+    y: 5
     width: 200
     height: 100
   onEnterAction: 
   onExitAction: 
   condition:
-    predicate: 
-    parameters: []
+    and:
+    - or:
+      - predicate: HasQuest
+        parameters:
+        - JourneyToBakery
+        negate: 0
+    - or:
+      - predicate: HasItem
+        parameters:
+        - Bread
+        negate: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -233,7 +288,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodes:
   - {fileID: -529094065365722033}
-  - {fileID: 7141901388250545507}
   - {fileID: -2734003246265448398}
   - {fileID: -1883927391744401542}
   - {fileID: -1936462784720713246}
@@ -244,6 +298,7 @@ MonoBehaviour:
   - {fileID: 7452942372425598826}
   - {fileID: -378983205028900315}
   - {fileID: 5622202656822429700}
+  - {fileID: -5281817988768138024}
   newNodeOffset: {x: 250, y: 0}
 --- !u!114 &2084978164173077035
 MonoBehaviour:
@@ -263,15 +318,14 @@ MonoBehaviour:
   - d54ff58a-014b-4d72-8bc2-8b5430237d48
   rect:
     serializedVersion: 2
-    x: 891
-    y: -1
+    x: 558
+    y: 119
     width: 200
     height: 100
   onEnterAction: 
   onExitAction: 
   condition:
-    predicate: 
-    parameters: []
+    and: []
 --- !u!114 &4470928901386052662
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -296,8 +350,7 @@ MonoBehaviour:
   onEnterAction: 
   onExitAction: 
   condition:
-    predicate: 
-    parameters: []
+    and: []
 --- !u!114 &5622202656822429700
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -316,43 +369,14 @@ MonoBehaviour:
   - 412565a0-bc77-4311-8ee7-acc2d803c62b
   rect:
     serializedVersion: 2
-    x: 468
-    y: 378
+    x: 612
+    y: 501
     width: 200
     height: 100
   onEnterAction: 
   onExitAction: 
   condition:
-    predicate: 
-    parameters: []
---- !u!114 &7141901388250545507
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1bbc756a6650ab74bae0f2ae07a11ebf, type: 3}
-  m_Name: e435debb-a2a8-4c3b-89b4-4a2653e1aec3
-  m_EditorClassIdentifier: 
-  isPlayerSpeaking: 1
-  text: hi, I wanna bread
-  children:
-  - d534504c-cfe3-4682-b67e-bd4600b19241
-  rect:
-    serializedVersion: 2
-    x: 215
-    y: -2
-    width: 200
-    height: 100
-  onEnterAction: 
-  onExitAction: 
-  condition:
-    predicate: HasQuest
-    parameters:
-    - JourneyToBakery
+    and: []
 --- !u!114 &7452942372425598826
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -370,12 +394,11 @@ MonoBehaviour:
   children: []
   rect:
     serializedVersion: 2
-    x: 1358
-    y: 34
+    x: 1465
+    y: 90
     width: 200
     height: 100
   onEnterAction: 
   onExitAction: 
   condition:
-    predicate: 
-    parameters: []
+    and: []

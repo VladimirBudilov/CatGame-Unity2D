@@ -88,10 +88,10 @@ namespace RPG.Dialogue.Editor
 
                 scrollPosition = EditorGUILayout.BeginScrollView(scrollPosition);
 
-                // Rect canvas = GUILayoutUtility.GetRect(canvasSize, canvasSize);
-                // Texture2D backgroundTex = Resources.Load("background") as Texture2D;
-                // Rect texCoords = new Rect(0, 0, canvasSize / backgroundSize, canvasSize / backgroundSize);
-                // GUI.DrawTextureWithTexCoords(canvas, backgroundTex, texCoords);
+                Rect canvas = GUILayoutUtility.GetRect(canvasSize, canvasSize);
+                Texture2D backgroundTex = Resources.Load("background") as Texture2D;
+                Rect texCoords = new Rect(0, 0, canvasSize / backgroundSize, canvasSize / backgroundSize);
+                GUI.DrawTextureWithTexCoords(canvas, backgroundTex, texCoords);
 
                 foreach (DialogueNode node in selectedDialogue.GetAllNodes())
                 {

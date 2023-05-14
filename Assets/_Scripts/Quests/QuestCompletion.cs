@@ -12,4 +12,11 @@ public class QuestCompletion : MonoBehaviour
         QuestList questList = GameObject.FindGameObjectWithTag("Player").GetComponent<QuestList>();
         questList.CompleteObjective(quest, objective);
     }
+    public void AddCompletedObjective(string objective)
+    {
+        Debug.Log(objective);
+        this.objective = objective;
+        Debug.Log(this.objective);
+
+    }
 }

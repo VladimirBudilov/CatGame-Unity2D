@@ -16,6 +16,7 @@ using Random = UnityEngine.Random;
         DialogueNode currentNode = null;
         AIConversant currentConversant = null;
         bool isChoosing = false;
+        
 
         public event Action onConversationUpdated;
 

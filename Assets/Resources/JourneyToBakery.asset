@@ -13,16 +13,14 @@ MonoBehaviour:
   m_Name: JourneyToBakery
   m_EditorClassIdentifier: 
   objectives:
-  - reference: GetBread
+  - reference: Bread
     description: Get bread
     usesCondition: 0
     completionCondition:
-      predicate: 
-      parameters: []
-  - reference: GetbugSpray
+      and: []
+  - reference: Spray
     description: get "weapon"
     usesCondition: 0
     completionCondition:
-      predicate: 
-      parameters: []
+      and: []
   rewards: []

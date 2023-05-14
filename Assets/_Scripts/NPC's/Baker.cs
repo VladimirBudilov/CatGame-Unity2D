@@ -1,28 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
+using _Scripts.NPC_s;
 using UnityEngine;
 using UnityEngine.Serialization;
 
 public class Baker : MonoBehaviour
 {
-    [SerializeField] private string bread = "bread";
-    [SerializeField] private string bugSpray = "bread";
-    bool breadWasGiven = false;
-    bool bugSprayWasGiven = false;
-    
+    [SerializeField] private string bread = "Bread";
+    [SerializeField] private string bugSpray = "Spray";
+
     public void GiveBread()
     {
-        if(breadWasGiven) return;
+        GetComponent<QuestCompletion>().AddCompletedObjective(bread);
+        GameObject.FindGameObjectWithTag("Player").GetComponent<CatInventory>().GetItem(bread);
         GetComponent<QuestCompletion>().CompleteObjective();
-        Debug.Log("bread Added");
-        breadWasGiven = true;
     }
     
     public void GiveBugSpray()
     {
-        if(bugSprayWasGiven) return;
+        GetComponent<QuestCompletion>().AddCompletedObjective(bugSpray);
+        GameObject.FindGameObjectWithTag("Player").GetComponent<CatInventory>().GetItem(bugSpray);
         GetComponent<QuestCompletion>().CompleteObjective();
-        Debug.Log("bugSpray Added");
-        bugSprayWasGiven = true;
     }
 }
