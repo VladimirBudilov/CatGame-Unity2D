@@ -1,10 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class QuestListUI : MonoBehaviour
 {
-    [SerializeField] QuestItemUI questPrefab;
+    [SerializeField] GameObject questPrefab;
     QuestList questList;
 
     // Start is called before the first frame update
@@ -24,8 +22,8 @@ public class QuestListUI : MonoBehaviour
 
         foreach (QuestStatus status in questList.GetStatuses())
         {
-            QuestItemUI uiInstance = Instantiate<QuestItemUI>(questPrefab, transform);
-            uiInstance.Setup(status);
+            var uiInstance = Instantiate(questPrefab, transform);
+            uiInstance.GetComponent<QuestItemUI>().Setup(status);
         }
     }
 }

@@ -210,7 +210,7 @@ GameObject:
   - component: {fileID: 8674604813220839140}
   - component: {fileID: 7872226573354930828}
   m_Layer: 0
-  m_Name: Rewards Text
+  m_Name: Revords Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -345,7 +345,7 @@ GameObject:
   - component: {fileID: 1858304051222478210}
   - component: {fileID: 2899808577851514675}
   m_Layer: 0
-  m_Name: Rewards
+  m_Name: Revords
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -508,9 +508,9 @@ RectTransform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 274, y: 65.2151}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: 445, y: -98.015}
   m_SizeDelta: {x: 241.768, y: 245.9698}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7356780790425109946
@@ -591,8 +591,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: {fileID: 6095558127401874163}
   objectiveContainer: {fileID: 1914139041411856874}
-  objectivePref: {fileID: 294763864783267440, guid: 8a252728937b4a9448912c2ae8c72f6e, type: 3}
-  objectiveIncompletePref: {fileID: 7702674126185091561, guid: 6736df0d2dbcec240b4c56f455bf65f7, type: 3}
+  objectivePrefab: {fileID: 294763864783267440, guid: 8a252728937b4a9448912c2ae8c72f6e, type: 3}
+  objectiveIncompletePrefab: {fileID: 7702674126185091561, guid: 6736df0d2dbcec240b4c56f455bf65f7, type: 3}
   rewardText: {fileID: 7872226573354930828}
 --- !u!1 &9200668202509773957
 GameObject:
