@@ -16,6 +16,8 @@ GameObject:
   - component: {fileID: 1239825274}
   - component: {fileID: 3701560041062092951}
   - component: {fileID: 1312727241612324469}
+  - component: {fileID: 1984686956}
+  - component: {fileID: 1984686955}
   m_Layer: 0
   m_Name: mother
   m_TagString: Untagged
@@ -163,8 +165,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4cb3b5e1a1ece84cb7b830d1394f731, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  whiteSquarePrefab: {fileID: 2287626031741014398, guid: 8cedd00ecb9b97c49ae3e2a0319621bf, type: 3}
-  blackSquarePrefab: {fileID: 8418909734588404734, guid: 81a080b1e9b8bb244a5a76c41f4f5c25, type: 3}
+  key: Key
 --- !u!114 &3701560041062092951
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -177,7 +178,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 489b474435649514d9631f76de664ef3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  quest: {fileID: 11400000, guid: 22489f3c1591cba4b8fa44680d1d06aa, type: 2}
+  questFinished: 0
 --- !u!114 &1312727241612324469
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -190,19 +191,63 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a89180f0f396b7147bc6e1c685147f87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  action: GiveQuest
-  onTrigger:
+  action: GiveQuest1
+  onDialogueTrigger:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 3701560041062092951}
         m_TargetAssemblyTypeName: QuestGiver, Assembly-CSharp
         m_MethodName: GiveQuest
-        m_Mode: 1
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 11400000, guid: dcb2dff52061d2e44b7bb8eb812a727d, type: 2}
+          m_ObjectArgumentAssemblyTypeName: Quest, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1984686956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6012387841457090264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a89180f0f396b7147bc6e1c685147f87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  action: GiveQuest2
+  onDialogueTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3701560041062092951}
+        m_TargetAssemblyTypeName: QuestGiver, Assembly-CSharp
+        m_MethodName: GiveQuest
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: f167a46bb0abfe84fa0dbde53cb0f6c9, type: 2}
+          m_ObjectArgumentAssemblyTypeName: Quest, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1984686955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6012387841457090264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a89180f0f396b7147bc6e1c685147f87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  action: RemoveQuest
+  onDialogueTrigger:
+    m_PersistentCalls:
+      m_Calls: []

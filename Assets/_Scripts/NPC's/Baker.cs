@@ -11,15 +11,11 @@ public class Baker : MonoBehaviour
 
     public void GiveBread()
     {
-        GetComponent<QuestCompletion>().AddCompletedObjective(bread);
         GameObject.FindGameObjectWithTag("Player").GetComponent<CatInventory>().GetItem(bread);
-        GetComponent<QuestCompletion>().CompleteObjective();
     }
     
     public void GiveBugSpray()
     {
-        GetComponent<QuestCompletion>().AddCompletedObjective(bugSpray);
         GameObject.FindGameObjectWithTag("Player").GetComponent<CatInventory>().GetItem(bugSpray);
-        GetComponent<QuestCompletion>().CompleteObjective();
     }
 }

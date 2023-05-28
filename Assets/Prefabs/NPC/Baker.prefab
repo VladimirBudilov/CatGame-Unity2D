@@ -220,8 +220,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d78b1c49d30a1f4f9eae66917f9225e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _quest: {fileID: 11400000, guid: 22489f3c1591cba4b8fa44680d1d06aa, type: 2}
-  objectives: []
+  quest: {fileID: 11400000, guid: 22489f3c1591cba4b8fa44680d1d06aa, type: 2}
+  objective: 
 --- !u!114 &1354929129992144891
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -234,5 +234,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e11e48e165d43c49b4cd9cf28305089, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bread: Get bread
-  bugSpray: Get "weapon"
+  bread: Bread
+  bugSpray: Spray
