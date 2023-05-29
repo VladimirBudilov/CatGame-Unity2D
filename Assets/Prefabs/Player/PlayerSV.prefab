@@ -255,7 +255,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adfb696b102b91d4687b0ecfe2e05636, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerName: 
+  playerName: "\u041A\u043E\u0448\u043A\u043E\u0433\u0443\u0448"
 --- !u!114 &60739964
 MonoBehaviour:
   m_ObjectHideFlags: 0

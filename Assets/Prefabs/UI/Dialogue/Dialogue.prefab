@@ -526,8 +526,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -897,7 +897,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.00084686, y: -0.00048828125}
+  m_AnchoredPosition: {x: -0.0008544922, y: -0.00048828125}
   m_SizeDelta: {x: 279.55, y: 143.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1400294087270622088
@@ -1086,8 +1086,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 15
-  m_fontSizeBase: 15
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1247,8 +1247,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1525,8 +1525,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 12
-  m_fontSizeBase: 12
+  m_fontSize: 60
+  m_fontSizeBase: 60
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1723,14 +1723,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b9c0864200482b8b5bdad51e55e54c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aiText: {fileID: 0}
-  speakerName: {fileID: 0}
+  aiText: {fileID: 5847113071815715788}
+  speakerName: {fileID: 7001453527635224253}
   nextButton: {fileID: 2168989237834277005}
   quitButton: {fileID: 7017331983939028502}
   playerResponseRoot: {fileID: 6313495062452817692}
   choiceButton: {fileID: 2274497405241095248, guid: 1461278133c1b184aa0942a10f5ecb15, type: 3}
-  aiResponse: {fileID: 0}
-  playerResponse: {fileID: 0}
+  aiResponse: {fileID: 6592708994348214933}
+  playerResponse: {fileID: 2676358840778852851}
 --- !u!1 &6592708994348214933
 GameObject:
   m_ObjectHideFlags: 0
@@ -1890,8 +1890,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20
-  m_fontSizeBase: 20
+  m_fontSize: 40
+  m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2046,8 +2046,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 12
-  m_fontSizeBase: 12
+  m_fontSize: 35
+  m_fontSizeBase: 35
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2370,6 +2370,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6313495062452817692}
     m_Modifications:
+    - target: {fileID: 1076893737012169665, guid: 1461278133c1b184aa0942a10f5ecb15, type: 3}
+      propertyPath: m_fontSize
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1076893737012169665, guid: 1461278133c1b184aa0942a10f5ecb15, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 2274497405241095248, guid: 1461278133c1b184aa0942a10f5ecb15, type: 3}
       propertyPath: m_Name
       value: Button 1

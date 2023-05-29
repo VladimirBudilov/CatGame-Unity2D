@@ -105,7 +105,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AIDialogue: {fileID: 11400000, guid: c7959e7370b7e2f41b3570a885a8b317, type: 2}
-  AIName: Mother
+  AIName: "\u041C\u0430\u043C\u0430 \u041A\u043E\u0448\u043A\u0430 "
 --- !u!50 &1239825280
 Rigidbody2D:
   serializedVersion: 4

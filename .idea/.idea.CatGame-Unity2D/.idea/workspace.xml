@@ -5,41 +5,71 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d5e866c7-3144-4827-b7c9-be4fd1d4c153" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/TestObjects/Door.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/TestObjects/Door.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/TestObjects/ShowWindow.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/TestObjects/ShowWindow.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Купить хлеб и принести спрей.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Купить хлеб и принести спрей.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Купить хлеб и самому убить.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Купить хлеб и самому убить.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Baker.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Baker.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/Dialogues/ConversTrigger.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/Dialogues/ConversTrigger.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/Dialogues/DiaogueQuestTrigger.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/Dialogues/DiaogueQuestTrigger.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/UI sample Scene.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/UI sample Scene.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/UI/Canvas.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/UI/Canvas/UIScreen.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/UI/Canvas/UIScreen.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/UI/Canvas/UISystem.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/UI/Canvas/UISystem.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CatGame-Unity2D/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CatGame-Unity2D/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue/Dialogue with Baker.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue/Dialogue with Baker.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue/Dialogue with Mother.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue/Dialogue with Mother.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dialogue.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dialogue/КГ встречает маму в саду.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dialogue/КГ встречает маму в саду.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dialogue/КГ приходит к пекарне(началоЧерезДверь).asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dialogue/КГ приходит к пекарне(началоЧерезДверь).asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dialogue/КГ приходит к пекарне(началоЧерезПрилавок).asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dialogue/КГ приходит к пекарне(началоЧерезПрилавок).asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Info.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Info/InventorySO.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Info/InventorySO.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Info/ItemModifiers.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Info/ItemModifiers/Modifiers.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Info/ItemModifiers/Modifiers/OpenDoorModifier.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Info/ItemModifiers/Modifiers/OpenDoorModifier.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Info/ItemModifiers/OpenDoorModifierSO.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Info/ItemModifiers/OpenDoorModifierSO.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Info/ItemModifiers/OpenDoorSO.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Info/ItemModifiers/OpenDoorSO.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Info/ItemSO.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Info/ItemSO.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Info/KeyItemSO.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Info/KeyItemSO.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Items.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Items/Key.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Items/Key.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Items/PlayerInventory.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Items/PlayerInventory.asset.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/NPC/Baker.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/NPC/Baker.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/NPC/mother.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/NPC/mother.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player/PlayerSV.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player/PlayerSV.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/JourneyToBakery.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/JourneyToBakery.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Way to home.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Way to home.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/TestObjects/Door.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/TestObjects/Door.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Dialogue/Dialogue.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Dialogue/Dialogue.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Купить хлеб и принести спрей.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Купить хлеб и принести спрей.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Купить хлеб и самому убить.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Купить хлеб и самому убить.asset.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/TheJumpingScene &amp; Dialogue.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TheJumpingScene &amp; Dialogue.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Dialogues/DialogueNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Dialogues/DialogueNode.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Dialogues/DialogueTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Dialogues/DialogueTrigger.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Dialogues/PlayerConversant.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Dialogues/PlayerConversant.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/NPC's/Baker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/NPC's/Baker.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Quests/QuestCompletion.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Quests/QuestCompletion.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Quests/QuestGiver.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Quests/QuestGiver.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/UI/Dialogues/DialogueUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/UI/Dialogues/DialogueUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/47a4a1b24cc8769a0633f09366f2d644-transformed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/47a4a1b24cc8769a0633f09366f2d644-transformed.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Baker.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Baker.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/SpriteSV.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/SpriteSV.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/SpriteTV.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/SpriteTV.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/png-clipart-club-penguin-island-rockhopper-penguin-wikia-key-club-penguin-room-transformed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/png-clipart-club-penguin-island-rockhopper-penguin-wikia-key-club-penguin-room-transformed.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/МКсектч.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/МКсектч.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Фон_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Фон_1.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Фон_2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Фон_2.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Фон_3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Фон_3.jpg.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +82,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Editor/TMPro_CreateObjectMenu.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMPro_UGUI_Private.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Button.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -74,12 +105,13 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "XThreadsFramesViewSplitterKey": "0.50076336",
     "git-widget-placeholder": "Quest",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "preferences.sourceCode.C#",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -125,10 +157,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="3656">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="3656" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -164,7 +196,7 @@
       <workItem from="1684606416231" duration="37000" />
       <workItem from="1684606506482" duration="239000" />
       <workItem from="1684606776180" duration="709000" />
-      <workItem from="1685105704942" duration="17179000" />
+      <workItem from="1685105704942" duration="27528000" />
     </task>
     <servers />
   </component>

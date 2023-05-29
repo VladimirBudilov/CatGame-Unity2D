@@ -14,9 +14,8 @@ GameObject:
   - component: {fileID: 6428976229803897740}
   - component: {fileID: 6428976229803897741}
   - component: {fileID: 6428976229803897738}
-  - component: {fileID: 6126091536261740708}
-  - component: {fileID: 2641869798447580978}
-  - component: {fileID: 1293036218033512722}
+  - component: {fileID: 1236903964}
+  - component: {fileID: 1236903965}
   m_Layer: 0
   m_Name: Door
   m_TagString: Untagged
@@ -231,7 +230,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d78b1c49d30a1f4f9eae66917f9225e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &6126091536261740708
+--- !u!114 &1236903964
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -240,78 +239,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 6428976229803897739}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c16639eb9de94c0b9067bf31fb02f795, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  action: getBread
-  onQuestTrigger:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6428976229803897738}
-        m_TargetAssemblyTypeName: QuestCompletion, Assembly-CSharp
-        m_MethodName: AddCompletedObjective
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  _listQuests:
-  - {fileID: 11400000, guid: f167a46bb0abfe84fa0dbde53cb0f6c9, type: 2}
-  - {fileID: 11400000, guid: dcb2dff52061d2e44b7bb8eb812a727d, type: 2}
---- !u!114 &2641869798447580978
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6428976229803897739}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c16639eb9de94c0b9067bf31fb02f795, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  action: killSpider
-  onQuestTrigger:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6428976229803897738}
-        m_TargetAssemblyTypeName: QuestCompletion, Assembly-CSharp
-        m_MethodName: AddCompletedObjective
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  _listQuests:
-  - {fileID: 11400000, guid: f167a46bb0abfe84fa0dbde53cb0f6c9, type: 2}
---- !u!114 &1293036218033512722
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6428976229803897739}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c16639eb9de94c0b9067bf31fb02f795, type: 3}
+  m_Script: {fileID: 11500000, guid: a89180f0f396b7147bc6e1c685147f87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   action: getSpray
-  onQuestTrigger:
+  onDialogueTrigger:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6428976229803897738}
-        m_TargetAssemblyTypeName: QuestCompletion, Assembly-CSharp
-        m_MethodName: AddCompletedObjective
-        m_Mode: 0
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: Baker, Assembly-CSharp
+        m_MethodName: GiveBugSpray
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -320,8 +258,34 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  _listQuests:
-  - {fileID: 11400000, guid: dcb2dff52061d2e44b7bb8eb812a727d, type: 2}
+--- !u!114 &1236903965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6428976229803897739}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a89180f0f396b7147bc6e1c685147f87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  action: getBread
+  onDialogueTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: Baker, Assembly-CSharp
+        m_MethodName: GiveBread
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &6428976230639811106
 GameObject:
   m_ObjectHideFlags: 0
