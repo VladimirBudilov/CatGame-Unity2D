@@ -1,19 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
+using RPG.Dialogue;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class DialogueTrigger : MonoBehaviour
+public class DialogueTrigger : ConverseTrigger
 {
-    [SerializeField] private string action;
-
-    [SerializeField] private UnityEvent onTrigger;
-
-    public void Trigger(string actionToTrigger)
+    [SerializeField] protected UnityEvent onDialogueTrigger;
+    public override void Trigger(string actionToTrigger)
     {
         if (actionToTrigger == action)
         {
-            onTrigger?.Invoke();
+            onDialogueTrigger?.Invoke();
         }
     }
 }

@@ -4,14 +4,15 @@ using UnityEngine;
 
 public class QuestGiver : MonoBehaviour
 {
-    [SerializeField] private Quest quest;
+    private Quest quest;
     [SerializeField] private bool questFinished = false;
 
-    public void GiveQuest()
+    public void GiveQuest(Quest newQuest)
     {
         if(questFinished) return;
         var quests = GameObject.FindGameObjectWithTag("Player").GetComponent<QuestList>();
-        quests.AddQuest(quest);
+        this.quest = newQuest;
+        quests.AddQuest(newQuest);
     }
 
     public void RemoveQuest()

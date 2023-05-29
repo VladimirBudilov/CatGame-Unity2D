@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: StartScreenOverrideController
+  m_Controller: {fileID: 9100000, guid: b07589493908075428c864c0246bd495, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 6825d2225e2fa9148b745c75349a7e71, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 6825d2225e2fa9148b745c75349a7e71, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 6c93bb220290dae4e97f21ee5302cc9a, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 6c93bb220290dae4e97f21ee5302cc9a, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 7506928da95ef964abffbb58f91de5b6, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 7506928da95ef964abffbb58f91de5b6, type: 2}

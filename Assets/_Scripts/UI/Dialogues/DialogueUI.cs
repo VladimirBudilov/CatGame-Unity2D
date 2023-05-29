@@ -51,14 +51,28 @@ namespace RPG.UI
         {
             foreach (Transform button in playerResponseRoot)
                 Destroy(button.gameObject);
-            foreach (var choice in _playerConversant.GetChoices())
+            if (_playerConversant.CurrentNode == _playerConversant.CurrentDialogue.GetRootNode() &&
+                _playerConversant.CurrentDialogue.GetRootNode().IsPlayerSpeaking())
             {
+                var choice = _playerConversant.CurrentNode;
                 var button = Instantiate(choiceButton, playerResponseRoot);
                 button.GetComponentInChildren<TextMeshProUGUI>().text = choice.GetText();
                 button.GetComponentInChildren<Button>().onClick.AddListener(() =>
                 {
                     _playerConversant.SelectChoice(choice);
                 });
+            }
+            else
+            {
+                foreach (var choice in _playerConversant.GetChoices())
+                {
+                    var button = Instantiate(choiceButton, playerResponseRoot);
+                    button.GetComponentInChildren<TextMeshProUGUI>().text = choice.GetText();
+                    button.GetComponentInChildren<Button>().onClick.AddListener(() =>
+                    {
+                        _playerConversant.SelectChoice(choice);
+                    });
+                } 
             }
         }
 

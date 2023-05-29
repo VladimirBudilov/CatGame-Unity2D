@@ -13,11 +13,12 @@ using Random = UnityEngine.Random;
         [SerializeField] string playerName;
 
         Dialogue currentDialogue;
-        DialogueNode currentNode = null;
-        AIConversant currentConversant = null;
-        bool isChoosing = false;
-        
+        DialogueNode currentNode;
+        AIConversant currentConversant;
+        bool isChoosing;
 
+        public DialogueNode CurrentNode => currentNode;
+        public Dialogue CurrentDialogue => currentDialogue;
         public event Action onConversationUpdated;
 
         public void StartDialogue(AIConversant newConversant, Dialogue newDialogue)
@@ -25,6 +26,7 @@ using Random = UnityEngine.Random;
             currentConversant = newConversant;
             currentDialogue = newDialogue;
             currentNode = currentDialogue.GetRootNode();
+            isChoosing = currentNode.IsPlayerSpeaking();
             TriggerEnterAction();
             onConversationUpdated();
         }
@@ -81,6 +83,11 @@ using Random = UnityEngine.Random;
             currentNode = chosenNode;
             TriggerEnterAction();
             isChoosing = false;
+            if(!HasNext())
+            {
+                Quit();
+                return;
+            }
             Next();
         }
     
