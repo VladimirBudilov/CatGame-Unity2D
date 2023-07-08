@@ -5,7 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d5e866c7-3144-4827-b7c9-be4fd1d4c153" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Sceens/Start_Screen.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Sceens/Start_Screen.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Art/ассеты, слои.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Art/ассеты, слои/зад-план.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Art/ассеты, слои/зад-план.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Art/ассеты, слои/пер-план.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Art/ассеты, слои/пер-план.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Art/ассеты, слои/платф.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Art/ассеты, слои/платф.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/TestObjects/Ground.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/TestObjects/Ground.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/WorkWithParallax Scene.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/WorkWithParallax Scene.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/Managers/ParallaxBehavior.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CatGame-Unity2D/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CatGame-Unity2D/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Art/Sprites/SpriteSV.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Art/Sprites/SpriteSV.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Level.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Level.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TheJumpingScene &amp; Dialogue.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TheJumpingScene &amp; Dialogue.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +67,7 @@
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.C#&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -61,7 +80,7 @@
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Unity\2021.3.19f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="C:\Unity\2021.3.24f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath A:\unity\CatGame-Unity2D -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="A:\unity\CatGame-Unity2D" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -77,7 +96,7 @@
       <method v="2" />
     </configuration>
     <configuration name="UnitTests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Unity\2021.3.19f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="C:\Unity\2021.3.24f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath A:\unity\CatGame-Unity2D -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="A:\unity\CatGame-Unity2D" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -134,6 +153,12 @@
       <workItem from="1684606506482" duration="239000" />
       <workItem from="1684606776180" duration="709000" />
       <workItem from="1685105704942" duration="27528000" />
+      <workItem from="1685633242450" duration="3878000" />
+      <workItem from="1685734456197" duration="420000" />
+      <workItem from="1685736011537" duration="105000" />
+      <workItem from="1685815478538" duration="138000" />
+      <workItem from="1685815703702" duration="311000" />
+      <workItem from="1685863841144" duration="3129000" />
     </task>
     <servers />
   </component>
