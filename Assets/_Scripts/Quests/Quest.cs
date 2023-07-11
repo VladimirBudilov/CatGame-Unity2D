@@ -12,7 +12,7 @@ public class Quest : ScriptableObject {
     {
         [Min(1)]
         public int number;
-        public ItemSO item;
+        // public ItemSO item;
     }
 
     [System.Serializable]
