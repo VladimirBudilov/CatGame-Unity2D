@@ -46,9 +46,7 @@ GameObject:
   - component: {fileID: 1247780953366641757}
   - component: {fileID: 9066163479558733762}
   - component: {fileID: 8774864827752624387}
-  - component: {fileID: 8281005546269093715}
   - component: {fileID: 60739956}
-  - component: {fileID: 60739964}
   - component: {fileID: 3948997004647322266}
   - component: {fileID: 1465534424}
   m_Layer: 9
@@ -166,14 +164,14 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 4.7, y: 4.79}
+    oldSize: {x: 9.4, y: 9.58}
     newSize: {x: 4.7, y: 4.79}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.7506033, y: 3.1120436}
+  m_Size: {x: 4.12, y: 6.9}
   m_EdgeRadius: 0
 --- !u!114 &1247780953366641757
 MonoBehaviour:
@@ -230,19 +228,6 @@ MonoBehaviour:
   gun: {fileID: 3179577965805525682}
   bulletPref: {fileID: 1903925631746449887, guid: 02e7c056cba1e254b98e4429d1c929bf, type: 3}
   bulletSpeed: 20
---- !u!114 &8281005546269093715
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1247780953366641746}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5587e2453a06e434f8b42f2f523867a5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _inventoryData: {fileID: 11400000, guid: 9b54c70518811264a84411e5808ff4db, type: 2}
 --- !u!114 &60739956
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -256,18 +241,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerName: "\u041A\u043E\u0448\u043A\u043E\u0433\u0443\u0448"
---- !u!114 &60739964
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1247780953366641746}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 323a381de6ad34347ba6bfc86f86e17d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &3948997004647322266
 MonoBehaviour:
   m_ObjectHideFlags: 0
