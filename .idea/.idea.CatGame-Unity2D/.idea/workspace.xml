@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d5e866c7-3144-4827-b7c9-be4fd1d4c153" name="Changes" comment="" />
+    <list default="true" id="d5e866c7-3144-4827-b7c9-be4fd1d4c153" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Inventory/UICamera 1.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Inventory/UICamera 1.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/WorkWithParallax Scene &amp; Inventory.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/WorkWithParallax Scene &amp; Inventory.unity" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,6 +46,7 @@
     "WebServerToolWindowFactoryState": "false",
     "XThreadsFramesViewSplitterKey": "0.50076336",
     "git-widget-placeholder": "inventory2.0",
+    "ignore.virus.scanning.warn.message": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -139,6 +144,7 @@
       <workItem from="1685815703702" duration="311000" />
       <workItem from="1685863841144" duration="3129000" />
       <workItem from="1689409823725" duration="2040000" />
+      <workItem from="1689416035643" duration="196000" />
     </task>
     <servers />
   </component>
