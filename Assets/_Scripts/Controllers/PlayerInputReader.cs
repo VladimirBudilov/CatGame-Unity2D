@@ -1,4 +1,3 @@
-using MoreMountains.Tools;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -9,49 +8,47 @@ namespace _Scripts.Controllers
         private PlayerInputActions _playerControls;
         private InputAction _moveAction;
         private InputAction _jumpAction;
-        private PlayerController _playerMovementComponent;
+        private PlayerController _playerMovement;
 
         private void Awake()
         {
-            _playerMovementComponent = GetComponent<PlayerController>();
+            _playerMovement = GetComponent<PlayerController>();
             _playerControls = new PlayerInputActions();
         }
 
         private void OnEnable()
         {
-            _playerControls.Enable();
             _moveAction = _playerControls.Player.Movement;
             _jumpAction = _playerControls.Player.Jump;
-            _jumpAction.performed += Jump;
-            _moveAction.performed += Move;
+            _moveAction.Enable();
+            _jumpAction.Enable();
+            _jumpAction.started += StartJump;
+            _jumpAction.canceled += StopJump;
+            _moveAction.started += StartMove;
+            _moveAction.canceled += StoptMove;
         }
-        
         private void OnDisable()
         {
             _moveAction.Disable();
             _jumpAction.Disable();
         }
-        public void Move(InputAction.CallbackContext context)
+        public void StartMove(InputAction.CallbackContext context)
         {
-            Debug.Log("Move");
-            _playerMovementComponent.Direction = context.ReadValue<float>();
+                _playerMovement.Direction = context.ReadValue<float>();
         }
-
-        public void Jump(InputAction.CallbackContext context)
+        private void StoptMove(InputAction.CallbackContext obj)
         {
-            Debug.Log("Jump");
-            if (context.started)
-            {
-                Debug.Log("Jump started");
-                _playerMovementComponent.IsJumpPressing = true;
-            }
-
-            if (context.canceled)
-            {
-                Debug.Log("Jump canceled");
-                _playerMovementComponent.IsJumpPressing = false;
-                _playerMovementComponent.JumpButtonWasPressed = false;
-            }
+            _playerMovement.Direction = 0;
         }
+        public void StartJump(InputAction.CallbackContext context)
+        {
+            _playerMovement.IsJumpPressing = true;
+        }
+        private void StopJump(InputAction.CallbackContext obj)
+        {
+            _playerMovement.IsJumpPressing = false;
+            _playerMovement.JumpButtonWasPressed = false;
+        }
+        
     }
 }

@@ -5,13 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d5e866c7-3144-4827-b7c9-be4fd1d4c153" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/Components.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/Components/LayerCheck.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/Components/LayerCheck.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CatGame-Unity2D/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CatGame-Unity2D/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Game/InputController/PlayerInputActions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/InputController/PlayerInputActions.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Game/InputController/PlayerInputActions.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/InputController/PlayerInputActions.inputactions" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Controllers/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Controllers/PlayerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Controllers/PlayerInputReader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Controllers/PlayerInputReader.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +21,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Components/LayerCheck.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.5.1/InputSystem/Actions/InputActionState.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.5.1/InputSystem/Utilities/DelegateHelpers.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Editor/TMPro_CreateObjectMenu.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMP_SubMeshUI.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMPro_UGUI_Private.cs" root0="SKIP_HIGHLIGHTING" />
@@ -197,7 +195,7 @@
       <workItem from="1689416035643" duration="196000" />
       <workItem from="1689416366300" duration="4450000" />
       <workItem from="1689485316206" duration="707000" />
-      <workItem from="1689486448612" duration="2136000" />
+      <workItem from="1689486448612" duration="3023000" />
     </task>
     <servers />
   </component>
@@ -225,32 +223,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/_Scripts/Controllers/PlayerInputReader.cs</url>
-          <line>35</line>
-          <properties documentPath="C:\Unity\CatGame-Unity2D\Assets\_Scripts\Controllers\PlayerInputReader.cs" initialLine="35" containingFunctionPresentation="Method 'Move'">
-            <startOffsets>
-              <option value="1047" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1065" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/_Scripts/Controllers/PlayerInputReader.cs</url>
-          <line>32</line>
-          <properties documentPath="C:\Unity\CatGame-Unity2D\Assets\_Scripts\Controllers\PlayerInputReader.cs" initialLine="32" containingFunctionPresentation="Method 'OnDisable'">
-            <startOffsets>
-              <option value="961" />
-            </startOffsets>
-            <endOffsets>
-              <option value="962" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/_Scripts/Controllers/PlayerController.cs</url>
           <line>21</line>
