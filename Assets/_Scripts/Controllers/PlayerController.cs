@@ -8,6 +8,7 @@ namespace _Scripts.Controllers
         [SerializeField] private float _speed = 5f;
         [SerializeField] private float _jumpForce = 10f;
         [SerializeField] private LayerCheck _groundCheck;
+        [SerializeField] private int _jumpCount = 2;
         private Rigidbody2D _rigidbody;
         private bool _isJumping;
         private bool _isGrounded;
@@ -64,12 +65,14 @@ namespace _Scripts.Controllers
 
         private float CalculateJumpVelocity(float yVelocity)
         {
-            if (_isGrounded && !JumpButtonWasPressed)
+            if (_jumpCount > 0)
             {
                 yVelocity = _jumpForce;
                 JumpButtonWasPressed = true;
+                _jumpCount--;
             }
-
+            else if(_isGrounded && _jumpCount == 0)
+                _jumpCount = 2;
             return yVelocity;
         }
 
