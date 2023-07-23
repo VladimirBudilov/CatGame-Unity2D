@@ -10,14 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 6012387841457090260}
   - component: {fileID: 6012387841457090261}
-  - component: {fileID: 6012387841457090266}
   - component: {fileID: 1239825280}
   - component: {fileID: 1239825279}
-  - component: {fileID: 1239825274}
-  - component: {fileID: 3701560041062092951}
-  - component: {fileID: 1312727241612324469}
-  - component: {fileID: 1984686956}
-  - component: {fileID: 1984686955}
+  - component: {fileID: 5192850822615146385}
   m_Layer: 0
   m_Name: mother
   m_TagString: Untagged
@@ -92,20 +87,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &6012387841457090266
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6012387841457090264}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 860b57f977be4e74abb893045ce589af, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AIDialogue: {fileID: 11400000, guid: c7959e7370b7e2f41b3570a885a8b317, type: 2}
-  AIName: "\u041C\u0430\u043C\u0430 \u041A\u043E\u0448\u043A\u0430 "
 --- !u!50 &1239825280
 Rigidbody2D:
   serializedVersion: 4
@@ -140,20 +121,20 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.015565872, y: 0}
+  m_Offset: {x: -0.01556778, y: 0.53787696}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 5.0000005, y: 5.0000005}
+    oldSize: {x: 10.000001, y: 10.000001}
     newSize: {x: 5.0000005, y: 5.0000005}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10.571522, y: 5.0000005}
+  m_Size: {x: 4.1176147, y: 6.075754}
   m_EdgeRadius: 0
---- !u!114 &1239825274
+--- !u!114 &5192850822615146385
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -162,92 +143,67 @@ MonoBehaviour:
   m_GameObject: {fileID: 6012387841457090264}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4cb3b5e1a1ece84cb7b830d1394f731, type: 3}
+  m_Script: {fileID: 11500000, guid: c593457cd8105e148906690e1707c592, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  key: Key
---- !u!114 &3701560041062092951
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6012387841457090264}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 489b474435649514d9631f76de664ef3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  questFinished: 0
---- !u!114 &1312727241612324469
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6012387841457090264}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a89180f0f396b7147bc6e1c685147f87, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  action: GiveQuest1
-  onDialogueTrigger:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 3701560041062092951}
-        m_TargetAssemblyTypeName: QuestGiver, Assembly-CSharp
-        m_MethodName: GiveQuest
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: dcb2dff52061d2e44b7bb8eb812a727d, type: 2}
-          m_ObjectArgumentAssemblyTypeName: Quest, Assembly-CSharp
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &1984686956
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6012387841457090264}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a89180f0f396b7147bc6e1c685147f87, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  action: GiveQuest2
-  onDialogueTrigger:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 3701560041062092951}
-        m_TargetAssemblyTypeName: QuestGiver, Assembly-CSharp
-        m_MethodName: GiveQuest
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: f167a46bb0abfe84fa0dbde53cb0f6c9, type: 2}
-          m_ObjectArgumentAssemblyTypeName: Quest, Assembly-CSharp
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &1984686955
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6012387841457090264}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a89180f0f396b7147bc6e1c685147f87, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  action: RemoveQuest
-  onDialogueTrigger:
+  trigger: 32
+  condition:
+    luaConditions: []
+    questConditions: []
+    acceptedTags: []
+    acceptedGameObjects: []
+    luaWizardIndex: -1
+    lastEvaluationValue: 0
+  setQuestState: 1
+  questName: 
+  questState: 0
+  setQuestEntryState: 0
+  questEntryNumber: 1
+  questEntryState: 0
+  setAnotherQuestEntryState: 0
+  anotherQuestEntryNumber: 1
+  anotherQuestEntryState: 0
+  luaCode: 
+  sequence: 
+  sequenceSpeaker: {fileID: 0}
+  sequenceListener: {fileID: 0}
+  waitOneFrameOnStartOrEnable: 1
+  alertMessage: 
+  textTable: {fileID: 0}
+  alertDuration: 0
+  sendMessages: []
+  barkSource: 0
+  barkConversation: 
+  barkText: 
+  barkTextSequence: 
+  barker: {fileID: 0}
+  barkTarget: {fileID: 0}
+  barkOrder: 0
+  allowBarksDuringConversations: 0
+  skipBarkIfNoValidEntries: 0
+  cacheBarkLines: 0
+  conversation: 
+  conversationConversant: {fileID: 0}
+  conversationActor: {fileID: 0}
+  startConversationEntryID: -1
+  startConversationEntryTitle: 
+  exclusive: 0
+  replace: 0
+  skipIfNoValidEntries: 0
+  preventRestartOnSameFrameEnded: 0
+  stopConversationOnTriggerExit: 0
+  stopConversationIfTooFar: 0
+  maxConversationDistance: 5
+  monitorConversationDistanceFrequency: 1
+  showCursorDuringConversation: 0
+  pauseGameDuringConversation: 0
+  setActiveActions: []
+  setEnabledActions: []
+  setAnimatorStateActions: []
+  onExecute:
     m_PersistentCalls:
       m_Calls: []
+  useConversationTitlePicker: 1
+  useBarkTitlePicker: 1
+  useQuestNamePicker: 1
+  selectedDatabase: {fileID: 11400000, guid: c1cc03cd82f6cdb40afbc0575be25564, type: 2}

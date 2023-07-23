@@ -10,13 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 5080916150416594085}
   - component: {fileID: 5080916150416594084}
-  - component: {fileID: 5080916150416594091}
   - component: {fileID: 1581679031330996721}
   - component: {fileID: 1581679031330996494}
-  - component: {fileID: 559852398203032580}
-  - component: {fileID: -355086404213325338}
-  - component: {fileID: 4382168746345199240}
-  - component: {fileID: 1354929129992144891}
   m_Layer: 0
   m_Name: Baker
   m_TagString: Untagged
@@ -91,20 +86,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &5080916150416594091
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5080916150416594089}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 860b57f977be4e74abb893045ce589af, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AIDialogue: {fileID: 11400000, guid: c65788d55c6e6f44ca6cc493d1803be7, type: 2}
-  AIName: Baker
 --- !u!50 &1581679031330996721
 Rigidbody2D:
   serializedVersion: 4
@@ -139,74 +120,16 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0035430565, y: 0}
+  m_Offset: {x: -0.07280946, y: -0.9498706}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 30.000002, y: 30.000002}
+    oldSize: {x: 42.857143, y: 42.857143}
     newSize: {x: 5.0000005, y: 5.0000005}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.31760257, y: 0.32}
+  m_Size: {x: 6.731252, y: 6.9933243}
   m_EdgeRadius: 0
---- !u!114 &559852398203032580
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5080916150416594089}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a89180f0f396b7147bc6e1c685147f87, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  action: GiveBread
-  onDialogueTrigger:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &-355086404213325338
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5080916150416594089}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a89180f0f396b7147bc6e1c685147f87, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  action: GiveBugSpray
-  onDialogueTrigger:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &4382168746345199240
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5080916150416594089}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d78b1c49d30a1f4f9eae66917f9225e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1354929129992144891
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5080916150416594089}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e11e48e165d43c49b4cd9cf28305089, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bread: Bread
-  bugSpray: Spray
