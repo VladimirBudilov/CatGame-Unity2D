@@ -6,7 +6,7 @@ namespace PixelCrushers.DialogueSystem.Wrappers
 {
 
     /// <summary>
-    /// This wrapper class keeps references intact if you switch between the 
+    /// This wrapper class keeps reference s intact if you switch between the 
     /// compiled assembly and source code versions of the original class.
     /// </summary>
     [HelpURL("http://www.pixelcrushers.com/dialogue_system/manual2x/html/proximity_selector.html")]
