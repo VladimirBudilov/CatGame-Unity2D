@@ -172,50 +172,26 @@ MonoBehaviour:
       value: "\u0445\u043B\u0435\u0431 \u0438 \u0441\u043F\u0440\u0435\u0439"
       type: 0
       typeString: CustomFieldType_Text
-    - title: Entry 1 State
-      value: active
-      type: 0
-      typeString: CustomFieldType_QuestState
-    - title: Entry 1
-      value: 
-      type: 0
-      typeString: CustomFieldType_Text
     - title: v
       value: 0
       type: 1
       typeString: CustomFieldType_Number
-    - title: Entry 1 [var=Bread]/1 collected
-      value: qweqweqwe
+    - title: Entry 1 State
+      value: active
       type: 0
-      typeString: CustomFieldType_Text
-    - title: Entry 1 qweqweqweqwewqe
-      value: qeqweqweqwe
+      typeString: 
+    - title: Entry 1
+      value: "\u0445\u043B\u0435\u0431 [var=Bread] /1"
       type: 0
-      typeString: CustomFieldType_Text
-    - title: 'Entry 1 '
-      value: retertryrtytryrty
-      type: 0
-      typeString: CustomFieldType_Text
+      typeString: 
     - title: Entry 2 State
-      value: unassigned
+      value: active
       type: 0
       typeString: 
     - title: Entry 2
-      value: 
+      value: "\u0441\u043F\u0440\u0435\u0439 [var=Spray]/1 "
       type: 0
       typeString: 
-    - title: Entry 2 [var=Bread]/1 collected
-      value: sefsdfsdf
-      type: 0
-      typeString: CustomFieldType_Text
-    - title: Entry 2 qweqweqweqwewqe
-      value: asdfsadfsadf
-      type: 0
-      typeString: CustomFieldType_Text
-    - title: 'Entry 2 '
-      value: sdfsadfsdfsdaf
-      type: 0
-      typeString: CustomFieldType_Text
   locations: []
   variables:
   - id: 1
@@ -249,7 +225,7 @@ MonoBehaviour:
   - id: 3
     fields:
     - title: Name
-      value: ' Spray'
+      value: Spray
       type: 0
       typeString: 
     - title: Initial Value
@@ -876,7 +852,7 @@ MonoBehaviour:
         destinationDialogueID: 11
         isConnector: 0
         priority: 2
-      conditionsString: (Variable["Bread"] >= 1) and (Variable["_Spray"] >= 1)
+      conditionsString: (Variable["Bread"] >= 1) and (Variable["Spray"] >= 1)
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -987,7 +963,9 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: SetQuestState("GetBread", "success")
+      userScript: 'SetQuestState("GetBread", "success");
+
+'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -1108,7 +1086,7 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 272.17535, y: 0}
+    canvasScrollPosition: {x: 28.891907, y: 0}
     canvasZoom: 0.6700003
   - id: 3
     fields:
@@ -1365,7 +1343,7 @@ MonoBehaviour:
         destinationDialogueID: 4
         isConnector: 0
         priority: 2
-      conditionsString: 
+      conditionsString: CurrentQuestState("GetBread") == "active"
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -1552,11 +1530,11 @@ MonoBehaviour:
       - title: Title
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Description
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Actor
         value: 4
         type: 5
@@ -1568,15 +1546,15 @@ MonoBehaviour:
       - title: Menu Text
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Dialogue Text
         value: "\u0434\u0435\u0440\u0436\u0438"
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Sequence
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       conversationID: 3
       isRoot: 0
       isGroup: 0
@@ -1592,7 +1570,10 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: 'Variable["Bread"] = Variable["Bread"] + 1;
+
+        Variable["Spray"]
+        = 1'
       onExecute:
         m_PersistentCalls:
           m_Calls: []

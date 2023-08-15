@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d5e866c7-3144-4827-b7c9-be4fd1d4c153" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel Crushers Tutorial Assets/2D/Scenes/Base Tutorial Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pixel Crushers Tutorial Assets/2D/Scenes/Base Tutorial Scene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Pixel Crushers/Dialogue System/Prefabs/Standard UI Prefabs/Templates/Bubble/Bubble Template Standard UI Subtitle Panel.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Pixel Crushers/Dialogue System/Prefabs/Standard UI Prefabs/Templates/Bubble/Bubble Template Standard UI Subtitle Panel.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Pixel Crushers/Dialogue System/Wrappers/Triggers/Interaction/ProximitySelector.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Pixel Crushers/Dialogue System/Wrappers/Triggers/Interaction/ProximitySelector.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FirstScene Dialogue Database.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FirstScene Dialogue Database.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -195,7 +193,7 @@
       <workItem from="1689416366300" duration="4450000" />
       <workItem from="1689485316206" duration="707000" />
       <workItem from="1689486448612" duration="3023000" />
-      <workItem from="1690621644773" duration="481000" />
+      <workItem from="1690621644773" duration="1357000" />
     </task>
     <servers />
   </component>
